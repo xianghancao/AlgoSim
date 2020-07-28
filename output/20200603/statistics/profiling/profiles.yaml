@@ -1,0 +1,30 @@
+start: '2020-06-03 09:36:00.000'
+end: '2020-06-03 14:54:57.000'
+length: 1 days
+total_capital: 2871915.79
+init_capital: 2875993.1
+total_returns: -0.0
+total_fee: 10150.21
+max_drawdowns: 0.01
+max_drawdowns_duration: 601.0
+sharpe: -0.23
+cagr: .nan
+sortino: -0.35
+rsquared: 0.58
+benchmark_total_capital: 2877400.0
+benchmark_sharpe: 0.08
+benchmark_max_drawdowns: 0.01
+benchmark_max_drawdowns_duration: 582.0
+benchmark_cagr: .nan
+benchmark_sortino: 0.12
+benchmark_rsquared: 0.64
+alpha_capital: -5484.21
+alpha_sharpe: -7.19
+alpha_max_drawdowns: 0.0
+alpha_max_drawdowns_duration: 1247.0
+alpha_cagr: .nan
+alpha_sortino: -11.75
+alpha_rsquared: 0.92
+daily_buy_trades_amount: 2064145.0
+daily_sell_trades_amount: 2078560.0
+daily_trades_amount: 4142705.0

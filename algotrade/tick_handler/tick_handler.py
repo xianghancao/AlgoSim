@@ -128,7 +128,7 @@ class TickHandler(AbstractTickHandler):
 
     # ------------------------------------------------------------------------
     def _init_ticker(self):
-        self.ticker_names = np.unique(self.TAQ_df['Symbol'].values)
+        self.ticker_names = self.subscribe_tickers #np.unique(self.TAQ_df['Symbol'].values)
 
 
 
@@ -211,7 +211,10 @@ class TickHandler(AbstractTickHandler):
                             self.TAQ_df.index.values[self.TAQ_iter_num] < self.timestamp:
                 data = self.TAQ_df.iloc[self.TAQ_iter_num].to_dict()
                 for field in self.subscribe_fields['TAQ']:
-                    self.tick_ticker_dict[data['Symbol']][field] = float(data[field])
+                    if data[field] != 0:
+                        self.tick_ticker_dict[data['Symbol']][field] = float(data[field])
+                    else:
+                        continue
             elif self.TAQ_df.index.values[self.TAQ_iter_num] >= self.timestamp:
                 break
             self.TAQ_iter_num = next(self.TAQ_iterator)

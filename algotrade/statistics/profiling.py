@@ -4,6 +4,8 @@ import os
 from ..utils.performance import *
 import yaml
 from .tearsheet import plot_tearsheet
+import pdb
+
 
 class Profiling(object):
     def __init__(self, benchmark, periods=252*16, account_path=None):
@@ -28,8 +30,8 @@ class Profiling(object):
         self.cal_sortino()
         self.cal_rsq()
 
-        self.load_benchmark()
         self.cal_benchmark_PNL()
+        self.load_benchmark()
         self.cal_benchmark_sharpe()
         self.cal_benchmark_drawdowns()
         self.cal_benchmark_cagr()
@@ -51,15 +53,14 @@ class Profiling(object):
                      rolling_sharpe=True, store_path=self.store_path)
 
     def load_price(self):
-        self.price = pd.read_csv(os.path.join(self.account_path, 'price', 'vwap.csv'), index_col=0)
-        self.marker = pd.read_csv(os.path.join(self.account_path, 'price', 'bar_marker.csv'), index_col=0)
-        self.price = self.price.loc[np.in1d(self.price.index.values,
-                                    self.marker['bar_marker'].index.values[self.marker['bar_marker'].values != 'LOOKBACK'])]
+        self.price = pd.read_csv(os.path.join(self.account_path, 'price', 'BuyPrice01.csv'), index_col=0)
+        # self.price = self.price.loc[np.in1d(self.price.index.values,
+        #                             self.marker['bar_marker'].index.values[self.marker['bar_marker'].values != 'LOOKBACK'])]
 
 
     def load_books(self):
-        setattr(self, 'book', pd.read_csv(os.path.join(self.account_path, 'book', 'history_book.csv'), index_col=0))
-        self.book = self.book.loc[self.price.index.values]
+        setattr(self, 'book', pd.read_csv(os.path.join(self.account_path, 'position', 'history_book.csv'), index_col=0))
+        #self.book = self.book.loc[self.price.index.values]
         self.book['现金'] = self.book['现金'].fillna(method='ffill')
         self.book['股票资产'] = self.book['股票资产'].fillna(method='ffill')
         self.book['手续费'] = self.book['手续费'].fillna(0)
@@ -117,14 +118,14 @@ class Profiling(object):
 
     # benchmark -----------------------------------------------------------------------------------------------------------
     def load_benchmark(self):
-        df = pd.read_csv(os.path.join(self.account_path, 'statistics', 'benchmark', self.benchmark +'.csv'), index_col=0)
-        self.stats['benchmark_returns'] = df.iloc[:, 0]
+        self.stats['benchmark_returns'] = (self.stats['benchmark_PNL'] - self.stats['benchmark_PNL'].shift(1))/self.stats['benchmark_PNL'].iloc[0]
+        self.stats['benchmark_returns'] = self.stats['benchmark_returns'].fillna(0)
         self.stats['benchmark_returns'].replace([np.inf, -np.inf], np.nan, inplace=True)
         self.stats['benchmark_cum_returns'] = self.stats['benchmark_returns'].cumsum(skipna=True)
 
 
     def cal_benchmark_PNL(self):
-        self.stats['benchmark_PNL'] = (self.stats['benchmark_cum_returns'] + 1)* self.stats['PNL'].iloc[0]
+        self.stats['benchmark_PNL'] = self.book['初始持仓资产']
         self.stats['benchmark_total_capital'] = self.stats['benchmark_PNL'].iloc[-1]
 
 

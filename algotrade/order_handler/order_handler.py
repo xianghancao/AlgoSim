@@ -90,10 +90,13 @@ class OrderHandler(object):
                 self.order_dict[ticker]['订单类型'] = "正常委托"
                 self.order_dict[ticker]['委托价格'] = self.buy_price_01[ticker]
 
-        order_event = OrderEvent(order_name=event.algo_name,
-                                    order_dict=self.order_dict,
-                                    timestamp=self.timestamp)
-        self.event_queue.put(order_event)
+        if len(self.order_dict) > 0:
+            order_event = OrderEvent(order_name=event.algo_name,
+                                        order_dict=self.order_dict,
+                                        timestamp=self.timestamp)
+            self.event_queue.put(order_event)
+        else:
+            return
 
 
 
@@ -122,7 +125,7 @@ class OrderHandler(object):
         if not os.path.exists(store_path):
             os.mkdir(store_path)
 
-        with open(os.path.join(store_path, self.timestamp+'.yaml').replace(':', '-'), 'w', encoding='utf-8') as f:
+        with open(os.path.join(store_path, 'order.yaml').replace(':', '-'), 'w', encoding='utf-8') as f:
             yaml.dump(self.history_order_dict, f, allow_unicode=True, sort_keys=False)
 
         # self.history_order_quantity_df.to_csv(os.path.join(store_path, 'order_quantity.csv'))

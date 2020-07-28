@@ -1,0 +1,6037 @@
+'2020-06-01 09:36:00.000':
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADAAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 4.03
+    市值: 40300
+    净开仓: 0
+    初始持仓市值: 40300
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADAAAAA4AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 3.01
+    市值: 30100
+    净开仓: 0
+    初始持仓市值: 30100
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADEAAAA3AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 2.5
+    市值: 25000
+    净开仓: 0
+    初始持仓市值: 25000
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADIAAAAxAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 7.46
+    市值: 74600
+    净开仓: 0
+    初始持仓市值: 74600
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADIAAAAyAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 1.25
+    市值: 12500
+    净开仓: 0
+    初始持仓市值: 12500
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADIAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 6.5
+    市值: 65000
+    净开仓: 0
+    初始持仓市值: 65000
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADMAAAA3AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 0.0
+    市值: 0
+    净开仓: 0
+    初始持仓市值: 0
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADMAAAA5AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 3.95
+    市值: 39500
+    净开仓: 0
+    初始持仓市值: 39500
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADUAAAAzAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 25.73
+    市值: 257300
+    净开仓: 0
+    初始持仓市值: 257300
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADUAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 13.52
+    市值: 135200
+    净开仓: 0
+    初始持仓市值: 135200
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADUAAAA4AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 6.11
+    市值: 61100
+    净开仓: 0
+    初始持仓市值: 61100
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADYAAAAwAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 13.8
+    市值: 138000
+    净开仓: 0
+    初始持仓市值: 138000
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADYAAAAyAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 12.51
+    市值: 125100
+    净开仓: 0
+    初始持仓市值: 125100
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADYAAAA0AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 9.34
+    市值: 93400
+    净开仓: 0
+    初始持仓市值: 93400
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADcAAAAzAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 9.23
+    市值: 92300
+    净开仓: 0
+    初始持仓市值: 92300
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADcAAAA5AAAA
+  : 初始持仓: 10000
+    持仓: 9900
+    可用: 9900
+    上限: 10000
+    现价: 24.11
+    市值: 238689
+    净开仓: -100
+    初始持仓市值: 241100
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADkAAAA0AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 6.22
+    市值: 62200
+    净开仓: 0
+    初始持仓市值: 62200
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADIAAAAwAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 6.37
+    市值: 63700
+    净开仓: 0
+    初始持仓市值: 63700
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADIAAAA1AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 5.54
+    市值: 55400
+    净开仓: 0
+    初始持仓市值: 55400
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADIAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 9.77
+    市值: 97700
+    净开仓: 0
+    初始持仓市值: 97700
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADMAAAAyAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 61.76
+    市值: 617600
+    净开仓: 0
+    初始持仓市值: 617600
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADMAAAA4AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 10.09
+    市值: 100900
+    净开仓: 0
+    初始持仓市值: 100900
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADQAAAAxAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 9.02
+    市值: 90200
+    净开仓: 0
+    初始持仓市值: 90200
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADQAAAAzAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 12.43
+    市值: 124300
+    净开仓: 0
+    初始持仓市值: 124300
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADUAAAAzAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 8.78
+    市值: 87800
+    净开仓: 0
+    初始持仓市值: 87800
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADUAAAA1AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 11.39
+    市值: 113900
+    净开仓: 0
+    初始持仓市值: 113900
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADUAAAA4AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 8.4
+    市值: 84000
+    净开仓: 0
+    初始持仓市值: 84000
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADYAAAAwAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 6.68
+    市值: 66800
+    净开仓: 0
+    初始持仓市值: 66800
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADYAAAAxAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 39.51
+    市值: 395100
+    净开仓: 0
+    初始持仓市值: 395100
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADYAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 1.78
+    市值: 17800
+    净开仓: 0
+    初始持仓市值: 17800
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADYAAAA3AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 15.34
+    市值: 153400
+    净开仓: 0
+    初始持仓市值: 153400
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADcAAAAxAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 17.78
+    市值: 177800
+    净开仓: 0
+    初始持仓市值: 177800
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADkAAAA1AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 14.61
+    市值: 146100
+    净开仓: 0
+    初始持仓市值: 146100
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADAAAAAxAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 24.6
+    市值: 246000
+    净开仓: 0
+    初始持仓市值: 246000
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADEAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 16.31
+    市值: 163100
+    净开仓: 0
+    初始持仓市值: 163100
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADUAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 2.63
+    市值: 26300
+    净开仓: 0
+    初始持仓市值: 26300
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADUAAAA4AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 16.95
+    市值: 169500
+    净开仓: 0
+    初始持仓市值: 169500
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADUAAAA5AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 32.99
+    市值: 329900
+    净开仓: 0
+    初始持仓市值: 329900
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADYAAAAwAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 13.87
+    市值: 138700
+    净开仓: 0
+    初始持仓市值: 138700
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADYAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 6.16
+    市值: 61600
+    净开仓: 0
+    初始持仓市值: 61600
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADcAAAAzAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 8.49
+    市值: 84900
+    净开仓: 0
+    初始持仓市值: 84900
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADcAAAA3AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 3.39
+    市值: 33900
+    净开仓: 0
+    初始持仓市值: 33900
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADgAAAAyAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 2.83
+    市值: 28300
+    净开仓: 0
+    初始持仓市值: 28300
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADkAAAAxAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 8.1
+    市值: 81000
+    净开仓: 0
+    初始持仓市值: 81000
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADkAAAA4AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 42.04
+    市值: 420400
+    净开仓: 0
+    初始持仓市值: 420400
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMwAAADAAAAA3AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 1.5
+    市值: 15000
+    净开仓: 0
+    初始持仓市值: 15000
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMwAAADEAAAAyAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 7.63
+    市值: 76300
+    净开仓: 0
+    初始持仓市值: 76300
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMwAAADEAAAA1AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 39.22
+    市值: 392200
+    净开仓: 0
+    初始持仓市值: 392200
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMwAAADEAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 13.9
+    市值: 139000
+    净开仓: 0
+    初始持仓市值: 139000
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMwAAADIAAAA1AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 6.64
+    市值: 66400
+    净开仓: 0
+    初始持仓市值: 66400
+'2020-06-01 09:36:03.000':
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADAAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 4.03
+    市值: 40300
+    净开仓: 0
+    初始持仓市值: 40300
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADAAAAA4AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 3.01
+    市值: 30100
+    净开仓: 0
+    初始持仓市值: 30100
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADEAAAA3AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 2.5
+    市值: 25000
+    净开仓: 0
+    初始持仓市值: 25000
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADIAAAAxAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 7.46
+    市值: 74600
+    净开仓: 0
+    初始持仓市值: 74600
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADIAAAAyAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 1.25
+    市值: 12500
+    净开仓: 0
+    初始持仓市值: 12500
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADIAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 6.5
+    市值: 65000
+    净开仓: 0
+    初始持仓市值: 65000
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADMAAAA3AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 0.0
+    市值: 0
+    净开仓: 0
+    初始持仓市值: 0
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADMAAAA5AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 3.95
+    市值: 39500
+    净开仓: 0
+    初始持仓市值: 39500
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADUAAAAzAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 25.77
+    市值: 257700
+    净开仓: 0
+    初始持仓市值: 257700
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADUAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 13.52
+    市值: 135200
+    净开仓: 0
+    初始持仓市值: 135200
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADUAAAA4AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 6.11
+    市值: 61100
+    净开仓: 0
+    初始持仓市值: 61100
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADYAAAAwAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 13.81
+    市值: 138100
+    净开仓: 0
+    初始持仓市值: 138100
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADYAAAAyAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 12.52
+    市值: 125200
+    净开仓: 0
+    初始持仓市值: 125200
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADYAAAA0AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 9.34
+    市值: 93400
+    净开仓: 0
+    初始持仓市值: 93400
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADcAAAAzAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 9.23
+    市值: 92300
+    净开仓: 0
+    初始持仓市值: 92300
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADcAAAA5AAAA
+  : 初始持仓: 10000
+    持仓: 9900
+    可用: 9900
+    上限: 10000
+    现价: 24.13
+    市值: 238887
+    净开仓: -100
+    初始持仓市值: 241300
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADkAAAA0AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 6.22
+    市值: 62200
+    净开仓: 0
+    初始持仓市值: 62200
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADIAAAAwAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 6.37
+    市值: 63700
+    净开仓: 0
+    初始持仓市值: 63700
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADIAAAA1AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 5.55
+    市值: 55500
+    净开仓: 0
+    初始持仓市值: 55500
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADIAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 9.78
+    市值: 97800
+    净开仓: 0
+    初始持仓市值: 97800
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADMAAAAyAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 61.7
+    市值: 617000
+    净开仓: 0
+    初始持仓市值: 617000
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADMAAAA4AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 10.08
+    市值: 100800
+    净开仓: 0
+    初始持仓市值: 100800
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADQAAAAxAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 9.02
+    市值: 90200
+    净开仓: 0
+    初始持仓市值: 90200
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADQAAAAzAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 12.42
+    市值: 124200
+    净开仓: 0
+    初始持仓市值: 124200
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADUAAAAzAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 8.78
+    市值: 87800
+    净开仓: 0
+    初始持仓市值: 87800
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADUAAAA1AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 11.4
+    市值: 114000
+    净开仓: 0
+    初始持仓市值: 114000
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADUAAAA4AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 8.4
+    市值: 84000
+    净开仓: 0
+    初始持仓市值: 84000
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADYAAAAwAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 6.68
+    市值: 66800
+    净开仓: 0
+    初始持仓市值: 66800
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADYAAAAxAAAA
+  : 初始持仓: 10000
+    持仓: 9900
+    可用: 9900
+    上限: 10000
+    现价: 39.48
+    市值: 390852
+    净开仓: -100
+    初始持仓市值: 394800
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADYAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 1.78
+    市值: 17800
+    净开仓: 0
+    初始持仓市值: 17800
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADYAAAA3AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 15.33
+    市值: 153300
+    净开仓: 0
+    初始持仓市值: 153300
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADcAAAAxAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 17.75
+    市值: 177500
+    净开仓: 0
+    初始持仓市值: 177500
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADkAAAA1AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 14.61
+    市值: 146100
+    净开仓: 0
+    初始持仓市值: 146100
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADAAAAAxAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 24.57
+    市值: 245700
+    净开仓: 0
+    初始持仓市值: 245700
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADEAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 16.31
+    市值: 163100
+    净开仓: 0
+    初始持仓市值: 163100
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADUAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 2.63
+    市值: 26300
+    净开仓: 0
+    初始持仓市值: 26300
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADUAAAA4AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 16.95
+    市值: 169500
+    净开仓: 0
+    初始持仓市值: 169500
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADUAAAA5AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 32.98
+    市值: 329800
+    净开仓: 0
+    初始持仓市值: 329800
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADYAAAAwAAAA
+  : 初始持仓: 10000
+    持仓: 9900
+    可用: 9900
+    上限: 10000
+    现价: 13.88
+    市值: 137412
+    净开仓: -100
+    初始持仓市值: 138800
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADYAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 6.16
+    市值: 61600
+    净开仓: 0
+    初始持仓市值: 61600
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADcAAAAzAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 8.49
+    市值: 84900
+    净开仓: 0
+    初始持仓市值: 84900
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADcAAAA3AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 3.39
+    市值: 33900
+    净开仓: 0
+    初始持仓市值: 33900
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADgAAAAyAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 2.82
+    市值: 28200
+    净开仓: 0
+    初始持仓市值: 28200
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADkAAAAxAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 8.1
+    市值: 81000
+    净开仓: 0
+    初始持仓市值: 81000
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADkAAAA4AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 42.02
+    市值: 420200
+    净开仓: 0
+    初始持仓市值: 420200
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMwAAADAAAAA3AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 1.5
+    市值: 15000
+    净开仓: 0
+    初始持仓市值: 15000
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMwAAADEAAAAyAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 7.64
+    市值: 76400
+    净开仓: 0
+    初始持仓市值: 76400
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMwAAADEAAAA1AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 39.21
+    市值: 392100
+    净开仓: 0
+    初始持仓市值: 392100
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMwAAADEAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 13.88
+    市值: 138800
+    净开仓: 0
+    初始持仓市值: 138800
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMwAAADIAAAA1AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 6.64
+    市值: 66400
+    净开仓: 0
+    初始持仓市值: 66400
+'2020-06-01 09:36:06.000':
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADAAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 4.03
+    市值: 40300
+    净开仓: 0
+    初始持仓市值: 40300
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADAAAAA4AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 3.01
+    市值: 30100
+    净开仓: 0
+    初始持仓市值: 30100
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADEAAAA3AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 2.5
+    市值: 25000
+    净开仓: 0
+    初始持仓市值: 25000
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADIAAAAxAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 7.46
+    市值: 74600
+    净开仓: 0
+    初始持仓市值: 74600
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADIAAAAyAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 1.25
+    市值: 12500
+    净开仓: 0
+    初始持仓市值: 12500
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADIAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 6.49
+    市值: 64900
+    净开仓: 0
+    初始持仓市值: 64900
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADMAAAA3AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 0.0
+    市值: 0
+    净开仓: 0
+    初始持仓市值: 0
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADMAAAA5AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 3.95
+    市值: 39500
+    净开仓: 0
+    初始持仓市值: 39500
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADUAAAAzAAAA
+  : 初始持仓: 10000
+    持仓: 10100
+    可用: 10000
+    上限: 10000
+    现价: 25.77
+    市值: 260277
+    净开仓: 100
+    初始持仓市值: 257700
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADUAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 13.52
+    市值: 135200
+    净开仓: 0
+    初始持仓市值: 135200
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADUAAAA4AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 6.11
+    市值: 61100
+    净开仓: 0
+    初始持仓市值: 61100
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADYAAAAwAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 13.8
+    市值: 138000
+    净开仓: 0
+    初始持仓市值: 138000
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADYAAAAyAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 12.51
+    市值: 125100
+    净开仓: 0
+    初始持仓市值: 125100
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADYAAAA0AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 9.34
+    市值: 93400
+    净开仓: 0
+    初始持仓市值: 93400
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADcAAAAzAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 9.23
+    市值: 92300
+    净开仓: 0
+    初始持仓市值: 92300
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADcAAAA5AAAA
+  : 初始持仓: 10000
+    持仓: 9900
+    可用: 9900
+    上限: 10000
+    现价: 24.08
+    市值: 238392
+    净开仓: -100
+    初始持仓市值: 240800
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADkAAAA0AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 6.22
+    市值: 62200
+    净开仓: 0
+    初始持仓市值: 62200
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADIAAAAwAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 6.37
+    市值: 63700
+    净开仓: 0
+    初始持仓市值: 63700
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADIAAAA1AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 5.54
+    市值: 55400
+    净开仓: 0
+    初始持仓市值: 55400
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADIAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 9.75
+    市值: 97500
+    净开仓: 0
+    初始持仓市值: 97500
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADMAAAAyAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 61.76
+    市值: 617600
+    净开仓: 0
+    初始持仓市值: 617600
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADMAAAA4AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 10.08
+    市值: 100800
+    净开仓: 0
+    初始持仓市值: 100800
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADQAAAAxAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 9.02
+    市值: 90200
+    净开仓: 0
+    初始持仓市值: 90200
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADQAAAAzAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 12.41
+    市值: 124100
+    净开仓: 0
+    初始持仓市值: 124100
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADUAAAAzAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 8.78
+    市值: 87800
+    净开仓: 0
+    初始持仓市值: 87800
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADUAAAA1AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 11.4
+    市值: 114000
+    净开仓: 0
+    初始持仓市值: 114000
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADUAAAA4AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 8.4
+    市值: 84000
+    净开仓: 0
+    初始持仓市值: 84000
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADYAAAAwAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 6.68
+    市值: 66800
+    净开仓: 0
+    初始持仓市值: 66800
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADYAAAAxAAAA
+  : 初始持仓: 10000
+    持仓: 9900
+    可用: 9900
+    上限: 10000
+    现价: 39.45
+    市值: 390555
+    净开仓: -100
+    初始持仓市值: 394500
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADYAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 1.78
+    市值: 17800
+    净开仓: 0
+    初始持仓市值: 17800
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADYAAAA3AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 15.33
+    市值: 153300
+    净开仓: 0
+    初始持仓市值: 153300
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADcAAAAxAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 17.75
+    市值: 177500
+    净开仓: 0
+    初始持仓市值: 177500
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADkAAAA1AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 14.63
+    市值: 146300
+    净开仓: 0
+    初始持仓市值: 146300
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADAAAAAxAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 24.56
+    市值: 245600
+    净开仓: 0
+    初始持仓市值: 245600
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADEAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 16.31
+    市值: 163100
+    净开仓: 0
+    初始持仓市值: 163100
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADUAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 2.63
+    市值: 26300
+    净开仓: 0
+    初始持仓市值: 26300
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADUAAAA4AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 16.95
+    市值: 169500
+    净开仓: 0
+    初始持仓市值: 169500
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADUAAAA5AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 33.03
+    市值: 330300
+    净开仓: 0
+    初始持仓市值: 330300
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADYAAAAwAAAA
+  : 初始持仓: 10000
+    持仓: 9900
+    可用: 9900
+    上限: 10000
+    现价: 13.88
+    市值: 137412
+    净开仓: -100
+    初始持仓市值: 138800
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADYAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 6.16
+    市值: 61600
+    净开仓: 0
+    初始持仓市值: 61600
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADcAAAAzAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 8.49
+    市值: 84900
+    净开仓: 0
+    初始持仓市值: 84900
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADcAAAA3AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 3.39
+    市值: 33900
+    净开仓: 0
+    初始持仓市值: 33900
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADgAAAAyAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 2.82
+    市值: 28200
+    净开仓: 0
+    初始持仓市值: 28200
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADkAAAAxAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 8.09
+    市值: 80900
+    净开仓: 0
+    初始持仓市值: 80900
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADkAAAA4AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 42.01
+    市值: 420100
+    净开仓: 0
+    初始持仓市值: 420100
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMwAAADAAAAA3AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 1.5
+    市值: 15000
+    净开仓: 0
+    初始持仓市值: 15000
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMwAAADEAAAAyAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 7.64
+    市值: 76400
+    净开仓: 0
+    初始持仓市值: 76400
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMwAAADEAAAA1AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 39.3
+    市值: 393000
+    净开仓: 0
+    初始持仓市值: 393000
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMwAAADEAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 13.88
+    市值: 138800
+    净开仓: 0
+    初始持仓市值: 138800
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMwAAADIAAAA1AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 6.64
+    市值: 66400
+    净开仓: 0
+    初始持仓市值: 66400
+'2020-06-01 09:36:09.000':
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADAAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 4.03
+    市值: 40300
+    净开仓: 0
+    初始持仓市值: 40300
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADAAAAA4AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 3.01
+    市值: 30100
+    净开仓: 0
+    初始持仓市值: 30100
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADEAAAA3AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 2.5
+    市值: 25000
+    净开仓: 0
+    初始持仓市值: 25000
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADIAAAAxAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 7.46
+    市值: 74600
+    净开仓: 0
+    初始持仓市值: 74600
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADIAAAAyAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 1.25
+    市值: 12500
+    净开仓: 0
+    初始持仓市值: 12500
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADIAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 6.49
+    市值: 64900
+    净开仓: 0
+    初始持仓市值: 64900
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADMAAAA3AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 0.0
+    市值: 0
+    净开仓: 0
+    初始持仓市值: 0
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADMAAAA5AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 3.95
+    市值: 39500
+    净开仓: 0
+    初始持仓市值: 39500
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADUAAAAzAAAA
+  : 初始持仓: 10000
+    持仓: 10100
+    可用: 10000
+    上限: 10000
+    现价: 25.73
+    市值: 259873
+    净开仓: 100
+    初始持仓市值: 257300
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADUAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 13.52
+    市值: 135200
+    净开仓: 0
+    初始持仓市值: 135200
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADUAAAA4AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 6.11
+    市值: 61100
+    净开仓: 0
+    初始持仓市值: 61100
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADYAAAAwAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 13.81
+    市值: 138100
+    净开仓: 0
+    初始持仓市值: 138100
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADYAAAAyAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 12.51
+    市值: 125100
+    净开仓: 0
+    初始持仓市值: 125100
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADYAAAA0AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 9.34
+    市值: 93400
+    净开仓: 0
+    初始持仓市值: 93400
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADcAAAAzAAAA
+  : 初始持仓: 10000
+    持仓: 9900
+    可用: 9900
+    上限: 10000
+    现价: 9.24
+    市值: 91476
+    净开仓: -100
+    初始持仓市值: 92400
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADcAAAA5AAAA
+  : 初始持仓: 10000
+    持仓: 9900
+    可用: 9900
+    上限: 10000
+    现价: 24.05
+    市值: 238095
+    净开仓: -100
+    初始持仓市值: 240500
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADkAAAA0AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 6.22
+    市值: 62200
+    净开仓: 0
+    初始持仓市值: 62200
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADIAAAAwAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 6.37
+    市值: 63700
+    净开仓: 0
+    初始持仓市值: 63700
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADIAAAA1AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 5.54
+    市值: 55400
+    净开仓: 0
+    初始持仓市值: 55400
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADIAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 9.75
+    市值: 97500
+    净开仓: 0
+    初始持仓市值: 97500
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADMAAAAyAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 61.71
+    市值: 617100
+    净开仓: 0
+    初始持仓市值: 617100
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADMAAAA4AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 10.09
+    市值: 100900
+    净开仓: 0
+    初始持仓市值: 100900
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADQAAAAxAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 9.02
+    市值: 90200
+    净开仓: 0
+    初始持仓市值: 90200
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADQAAAAzAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 12.4
+    市值: 124000
+    净开仓: 0
+    初始持仓市值: 124000
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADUAAAAzAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 8.78
+    市值: 87800
+    净开仓: 0
+    初始持仓市值: 87800
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADUAAAA1AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 11.41
+    市值: 114100
+    净开仓: 0
+    初始持仓市值: 114100
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADUAAAA4AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 8.4
+    市值: 84000
+    净开仓: 0
+    初始持仓市值: 84000
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADYAAAAwAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 6.68
+    市值: 66800
+    净开仓: 0
+    初始持仓市值: 66800
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADYAAAAxAAAA
+  : 初始持仓: 10000
+    持仓: 9900
+    可用: 9900
+    上限: 10000
+    现价: 39.38
+    市值: 389862
+    净开仓: -100
+    初始持仓市值: 393800
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADYAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 1.78
+    市值: 17800
+    净开仓: 0
+    初始持仓市值: 17800
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADYAAAA3AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 15.33
+    市值: 153300
+    净开仓: 0
+    初始持仓市值: 153300
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADcAAAAxAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 17.76
+    市值: 177600
+    净开仓: 0
+    初始持仓市值: 177600
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADkAAAA1AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 14.61
+    市值: 146100
+    净开仓: 0
+    初始持仓市值: 146100
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADAAAAAxAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 24.55
+    市值: 245500
+    净开仓: 0
+    初始持仓市值: 245500
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADEAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 16.31
+    市值: 163100
+    净开仓: 0
+    初始持仓市值: 163100
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADUAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 2.63
+    市值: 26300
+    净开仓: 0
+    初始持仓市值: 26300
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADUAAAA4AAAA
+  : 初始持仓: 10000
+    持仓: 10100
+    可用: 10000
+    上限: 10000
+    现价: 17.01
+    市值: 171801
+    净开仓: 100
+    初始持仓市值: 170100
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADUAAAA5AAAA
+  : 初始持仓: 10000
+    持仓: 9900
+    可用: 9900
+    上限: 10000
+    现价: 32.99
+    市值: 326601
+    净开仓: -100
+    初始持仓市值: 329900
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADYAAAAwAAAA
+  : 初始持仓: 10000
+    持仓: 9900
+    可用: 9900
+    上限: 10000
+    现价: 13.88
+    市值: 137412
+    净开仓: -100
+    初始持仓市值: 138800
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADYAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 6.17
+    市值: 61700
+    净开仓: 0
+    初始持仓市值: 61700
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADcAAAAzAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 8.49
+    市值: 84900
+    净开仓: 0
+    初始持仓市值: 84900
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADcAAAA3AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 3.39
+    市值: 33900
+    净开仓: 0
+    初始持仓市值: 33900
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADgAAAAyAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 2.82
+    市值: 28200
+    净开仓: 0
+    初始持仓市值: 28200
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADkAAAAxAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 8.09
+    市值: 80900
+    净开仓: 0
+    初始持仓市值: 80900
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADkAAAA4AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 41.9
+    市值: 419000
+    净开仓: 0
+    初始持仓市值: 419000
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMwAAADAAAAA3AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 1.5
+    市值: 15000
+    净开仓: 0
+    初始持仓市值: 15000
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMwAAADEAAAAyAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 7.64
+    市值: 76400
+    净开仓: 0
+    初始持仓市值: 76400
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMwAAADEAAAA1AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 39.14
+    市值: 391400
+    净开仓: 0
+    初始持仓市值: 391400
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMwAAADEAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 13.88
+    市值: 138800
+    净开仓: 0
+    初始持仓市值: 138800
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMwAAADIAAAA1AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 6.64
+    市值: 66400
+    净开仓: 0
+    初始持仓市值: 66400
+'2020-06-01 09:36:12.000':
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADAAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 4.03
+    市值: 40300
+    净开仓: 0
+    初始持仓市值: 40300
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADAAAAA4AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 3.01
+    市值: 30100
+    净开仓: 0
+    初始持仓市值: 30100
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADEAAAA3AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 2.5
+    市值: 25000
+    净开仓: 0
+    初始持仓市值: 25000
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADIAAAAxAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 7.46
+    市值: 74600
+    净开仓: 0
+    初始持仓市值: 74600
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADIAAAAyAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 1.25
+    市值: 12500
+    净开仓: 0
+    初始持仓市值: 12500
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADIAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 6.49
+    市值: 64900
+    净开仓: 0
+    初始持仓市值: 64900
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADMAAAA3AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 0.0
+    市值: 0
+    净开仓: 0
+    初始持仓市值: 0
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADMAAAA5AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 3.95
+    市值: 39500
+    净开仓: 0
+    初始持仓市值: 39500
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADUAAAAzAAAA
+  : 初始持仓: 10000
+    持仓: 10100
+    可用: 10000
+    上限: 10000
+    现价: 25.72
+    市值: 259772
+    净开仓: 100
+    初始持仓市值: 257200
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADUAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 13.53
+    市值: 135300
+    净开仓: 0
+    初始持仓市值: 135300
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADUAAAA4AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 6.11
+    市值: 61100
+    净开仓: 0
+    初始持仓市值: 61100
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADYAAAAwAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 13.78
+    市值: 137800
+    净开仓: 0
+    初始持仓市值: 137800
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADYAAAAyAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 12.51
+    市值: 125100
+    净开仓: 0
+    初始持仓市值: 125100
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADYAAAA0AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 9.34
+    市值: 93400
+    净开仓: 0
+    初始持仓市值: 93400
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADcAAAAzAAAA
+  : 初始持仓: 10000
+    持仓: 9800
+    可用: 9800
+    上限: 10000
+    现价: 9.23
+    市值: 90454
+    净开仓: -200
+    初始持仓市值: 92300
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADcAAAA5AAAA
+  : 初始持仓: 10000
+    持仓: 9900
+    可用: 9900
+    上限: 10000
+    现价: 24.05
+    市值: 238095
+    净开仓: -100
+    初始持仓市值: 240500
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMAAAADkAAAA0AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 6.21
+    市值: 62100
+    净开仓: 0
+    初始持仓市值: 62100
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADIAAAAwAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 6.38
+    市值: 63800
+    净开仓: 0
+    初始持仓市值: 63800
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADIAAAA1AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 5.54
+    市值: 55400
+    净开仓: 0
+    初始持仓市值: 55400
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADIAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 9.73
+    市值: 97300
+    净开仓: 0
+    初始持仓市值: 97300
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADMAAAAyAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 61.71
+    市值: 617100
+    净开仓: 0
+    初始持仓市值: 617100
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADMAAAA4AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 10.1
+    市值: 101000
+    净开仓: 0
+    初始持仓市值: 101000
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADQAAAAxAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 9.02
+    市值: 90200
+    净开仓: 0
+    初始持仓市值: 90200
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADQAAAAzAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 12.4
+    市值: 124000
+    净开仓: 0
+    初始持仓市值: 124000
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADUAAAAzAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 8.79
+    市值: 87900
+    净开仓: 0
+    初始持仓市值: 87900
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADUAAAA1AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 11.41
+    市值: 114100
+    净开仓: 0
+    初始持仓市值: 114100
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADUAAAA4AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 8.4
+    市值: 84000
+    净开仓: 0
+    初始持仓市值: 84000
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADYAAAAwAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 6.68
+    市值: 66800
+    净开仓: 0
+    初始持仓市值: 66800
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADYAAAAxAAAA
+  : 初始持仓: 10000
+    持仓: 9900
+    可用: 9900
+    上限: 10000
+    现价: 39.38
+    市值: 389862
+    净开仓: -100
+    初始持仓市值: 393800
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADYAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 1.78
+    市值: 17800
+    净开仓: 0
+    初始持仓市值: 17800
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADYAAAA3AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 15.33
+    市值: 153300
+    净开仓: 0
+    初始持仓市值: 153300
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADcAAAAxAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 17.76
+    市值: 177600
+    净开仓: 0
+    初始持仓市值: 177600
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMQAAADkAAAA1AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 14.6
+    市值: 146000
+    净开仓: 0
+    初始持仓市值: 146000
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADAAAAAxAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 24.57
+    市值: 245700
+    净开仓: 0
+    初始持仓市值: 245700
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADEAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 16.3
+    市值: 163000
+    净开仓: 0
+    初始持仓市值: 163000
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADUAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 2.63
+    市值: 26300
+    净开仓: 0
+    初始持仓市值: 26300
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADUAAAA4AAAA
+  : 初始持仓: 10000
+    持仓: 10100
+    可用: 10000
+    上限: 10000
+    现价: 17.0
+    市值: 171700
+    净开仓: 100
+    初始持仓市值: 170000
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADUAAAA5AAAA
+  : 初始持仓: 10000
+    持仓: 9900
+    可用: 9900
+    上限: 10000
+    现价: 32.97
+    市值: 326403
+    净开仓: -100
+    初始持仓市值: 329700
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADYAAAAwAAAA
+  : 初始持仓: 10000
+    持仓: 9900
+    可用: 9900
+    上限: 10000
+    现价: 13.88
+    市值: 137412
+    净开仓: -100
+    初始持仓市值: 138800
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADYAAAA2AAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 6.16
+    市值: 61600
+    净开仓: 0
+    初始持仓市值: 61600
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - 24
+    - 4
+    - 8
+  - !!binary |
+    NgAAADAAAAAwAAAAMgAAADcAAAAzAAAA
+  : 初始持仓: 10000
+    持仓: 10000
+    可用: 10000
+    上限: 10000
+    现价: 8.49
+    市值: 84900
+    净开仓: 0
+    初始持仓市值: 84900
+  ? !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - U6
+    - 0
+    - 1
+    state: !!python/tuple

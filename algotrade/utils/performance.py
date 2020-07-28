@@ -14,7 +14,7 @@ def aggregate_returns(returns, convert_to):
 
     if convert_to == 'daily':
         s = returns.groupby(
-            [lambda x: str(x)[-8:-3]]).apply(cumulate_returns)
+            [lambda x: str(x)[-8:-6]]).apply(cumulate_returns)
         return s
 
     elif convert_to == 'weekly':

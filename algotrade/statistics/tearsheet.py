@@ -66,7 +66,7 @@ def plot_tearsheet(stats, periods, benchmark=None, title=None, rolling_sharpe=Tr
     #_plot_txt_time(stats, ax=ax_txt_time)
 
     # Plot the figure
-    plt.show(block=False)
+    #plt.show(block=False)
 
     if store_path is not None:
         fig.savefig(os.path.join(store_path, 'tearsheet.jpg'))#, bbox_inches='tight')
@@ -99,7 +99,7 @@ def _plot_equity(stats, benchmark, log_scale=False, ax=None):
         )
 
     equity.plot(lw=2, color='green', alpha=0.6, x_compat=False,
-                label='Portfolio', ax=ax)
+                label='Trades', ax=ax)
 
     init_capital = equity.iloc[0]
     ax.axhline(init_capital, linestyle='--', color='black', lw=1)
@@ -182,7 +182,7 @@ def _plot_daily_returns(stats, ax=None, **kwargs):
     returns = stats['alpha_returns']
     returns = returns.fillna(0)
     returns.name = 'alpha returns'
-    returns.index = pd.to_datetime(returns.index)
+    #returns.index = pd.to_datetime(returns.index)
 
     if ax is None:
         ax = plt.gca()

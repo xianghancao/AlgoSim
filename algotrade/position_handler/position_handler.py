@@ -34,11 +34,10 @@ class PositionHandler(object):
         self.history_position = {}
 
         for ticker in self.position:
-            # 当前没有持仓，初始为0
             self.position[ticker]['现价'] = 0
             self.position[ticker]['市值'] = 0
             self.position[ticker]['净开仓'] = 0
-
+            self.position[ticker]['初始持仓市值'] = 0
 
     def _init_book(self):
         """
@@ -46,8 +45,7 @@ class PositionHandler(object):
         """
         self.book = {}
         self.book['现金'] = self.init_cash
-        self.book['股票资产'] = 0
-        self.book['总资产'] = self.book['现金'] + self.book['股票资产']
+        self.book['初始现金'] = self.init_cash
         self.history_book = {}
 
 
@@ -91,6 +89,7 @@ class PositionHandler(object):
             else:
                 self.position[ticker]['现价'] = self.buy_price_01[ticker]
                 self.position[ticker]['市值'] = round(self.position[ticker]['持仓'] * self.position[ticker]['现价'])
+            self.position[ticker]['初始持仓市值'] = round(self.position[ticker]['初始持仓'] * self.position[ticker]['现价'])
 
 
     def update_book(self, event):
@@ -99,6 +98,7 @@ class PositionHandler(object):
         """
         self.book['股票资产'] = 0
         self.book['手续费'] = 0
+        self.book['初始持仓股票资产'] = 0
         fill_dict = event.fill_dict
         for ticker in self.position:
             if ticker in fill_dict:
@@ -112,9 +112,12 @@ class PositionHandler(object):
             else:
                 pass
             self.book['股票资产'] = self.book['股票资产'] + self.position[ticker]['市值']
+            self.book['初始持仓股票资产'] = self.book['初始持仓股票资产'] + self.position[ticker]['初始持仓市值']
         self.book['手续费'] = round(self.book['手续费'], 2)
         self.book['现金'] = round(self.book['现金'], 2)
         self.book['总资产'] = self.book['现金'] + self.book['股票资产']
+        self.book['初始持仓资产'] = self.init_cash + self.book['初始持仓股票资产']
+
 
 
 

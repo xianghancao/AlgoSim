@@ -91,7 +91,6 @@ class AlgoHandler(object):
         self._update_TickFrame(event)
         self._calculate_algo(event)
         self._update_event(event)
-        #self.store()
 
 
     def store(self):
@@ -99,7 +98,9 @@ class AlgoHandler(object):
         store_path = os.path.join(self.store_path, 'algo')
         if not os.path.exists(store_path):
             os.mkdir(store_path)
-        pd.DataFrame(self.history_algo_dict).to_csv(os.path.join(store_path, self.algo_name+'.csv'))
+        df = pd.DataFrame(self.history_algo_dict).T
+        df.index=df['委托日期']
+        df.to_csv(os.path.join(store_path, self.algo_name+'.csv'))
         #self.history_predict_df.to_csv(os.path.join(store_path, 'predict.csv'))
         return
 

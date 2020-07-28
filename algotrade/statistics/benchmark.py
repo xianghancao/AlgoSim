@@ -20,11 +20,10 @@ class Benchmark(object):
         self.store_equal_wgts_returns()
 
     def load_bar_close_price(self):
-        close_price_df = pd.read_csv(os.path.join(self.account_path, 'price', 'vwap.csv'), index_col=0)
-        bar_marker = pd.read_csv(os.path.join(self.account_path, 'price', 'bar_marker.csv'), index_col=0)
+        self.close_price = pd.read_csv(os.path.join(self.account_path, 'price', 'BuyPrice01.csv'), index_col=0)
 
-        self.close_price = close_price_df.loc[np.in1d(close_price_df.index.values,
-                                    bar_marker['bar_marker'].index.values[bar_marker['bar_marker'].values != 'LOOKBACK'])]
+        # self.close_price = close_price_df.loc[np.in1d(close_price_df.index.values,
+        #                             bar_marker['bar_marker'].index.values[bar_marker['bar_marker'].values != 'LOOKBACK'])]
 
 
 
@@ -34,6 +33,7 @@ class Benchmark(object):
         """
         returns_ = self.close_price/self.close_price.shift(1) - 1
         returns_ = returns_.mean(skipna=True, axis=1)
+        returns_[returns_ == np.inf] = 0
         self.equal_wgts_returns = returns_.fillna(value=0)
         # self.equal_wgts_returns.name = 'equal_wgts_returns'
         # self.equal_wgts_returns.header = ['equal_wgts_returns']
