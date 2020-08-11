@@ -1,0 +1,6 @@
+*.pyc
+*.pyd
+sftp-config.json
+.ipynb_checkpoints
+.DS_Store
+store

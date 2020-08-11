@@ -84,6 +84,8 @@ class Trades(object):
                         index=df_5.index)
             df['bps'] = (df['卖价格']/df['买价格'] - 1)*10000
             self.bps_df = self.bps_df.append(df)
+        import pdb
+        pdb.set_trace()
         cond = self.bps_df['卖日期'] > self.bps_df['买日期']
         df = pd.to_datetime(self.bps_df['卖日期']) - pd.to_datetime(self.bps_df['买日期'])
         self.bps_df.loc[cond, '时间间隔'] = df[cond].astype(str)

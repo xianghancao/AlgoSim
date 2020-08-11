@@ -7,8 +7,8 @@ import pandas as pd
 import numpy as np
 from collections import deque
 import yaml
-
-
+import pdb
+#from numba import jit
 log = logger('[OrderHandler]')
 
 
@@ -45,7 +45,7 @@ class OrderHandler(object):
             self._gen_order_event(event)
 
             self._update_order()
-            #self.store()
+
 
 
     def _query_last_price(self):
@@ -68,8 +68,9 @@ class OrderHandler(object):
         """
         self.order_dict = {}
         for ticker in event.algo:
-            if event.algo[ticker] > 0 and self.book['现金']>event.algo[ticker] * self.sell_price_01[ticker] * 1.01:
-
+            if event.algo[ticker] > 0 and self.book['现金'] > event.algo[ticker] * self.sell_price_01[ticker] * 50\
+                                      and self.sell_price_01[ticker] > 0:
+            #if event.algo[ticker] > 0 and self.sell_price_01[ticker] > 0:
                 self.order_dict[ticker]={}
                 self.order_dict[ticker]['证券代码'] = ticker
                 self.order_dict[ticker]['委托日期'] = self.timestamp
@@ -79,7 +80,8 @@ class OrderHandler(object):
                 self.order_dict[ticker]['订单类型'] = "正常委托"
                 self.order_dict[ticker]['委托价格'] = self.sell_price_01[ticker]
 
-            elif event.algo[ticker] < 0 and self.position[ticker]['可用'] > 0:
+            elif event.algo[ticker] < 0 and self.position[ticker]['可用'] > 0 and self.buy_price_01[ticker]>0:
+            #elif event.algo[ticker] < 0 and self.buy_price_01[ticker]>0:
 
                 self.order_dict[ticker]={}
                 self.order_dict[ticker]['证券代码'] = ticker
@@ -90,29 +92,20 @@ class OrderHandler(object):
                 self.order_dict[ticker]['订单类型'] = "正常委托"
                 self.order_dict[ticker]['委托价格'] = self.buy_price_01[ticker]
 
-        if len(self.order_dict) > 0:
-            order_event = OrderEvent(order_name=event.algo_name,
-                                        order_dict=self.order_dict,
-                                        timestamp=self.timestamp)
-            self.event_queue.put(order_event)
-        else:
-            return
-
+        #if len(self.order_dict) > 0:
+        order_event = OrderEvent(order_name=event.algo_name,
+                                    order_dict=self.order_dict,
+                                    timestamp=self.timestamp)
+        self.event_queue.put(order_event)
+        log.info(len(self.order_dict))
+        return
 
 
 
 
     def _update_order(self):
         self.history_order_dict.update({self.timestamp:self.order_dict})
-        order_dict_df = pd.DataFrame(self.order_dict)
 
-        # order_quantity_df = order_dict_df.loc['委托数量']
-        # order_quantity_df.name = self.timestamp
-        # self.history_order_quantity_df = self.history_order_quantity_df.append(order_quantity_df)
-
-        # order_action_df = order_dict_df.loc['买卖方向']
-        # order_action_df.name = self.timestamp
-        # self.history_order_action_df = self.history_order_action_df.append(order_action_df)
 
 
 
@@ -120,16 +113,16 @@ class OrderHandler(object):
         """
         存储order
         """
-        if self.store_path is None: return
+        log.info('store ...')
         store_path = os.path.join(self.store_path, 'order')
         if not os.path.exists(store_path):
             os.mkdir(store_path)
 
-        with open(os.path.join(store_path, 'order.yaml').replace(':', '-'), 'w', encoding='utf-8') as f:
-            yaml.dump(self.history_order_dict, f, allow_unicode=True, sort_keys=False)
+        order_df = pd.DataFrame()
+        for timestamp in self.history_order_dict:
+            order_df = order_df.append(pd.DataFrame(self.history_order_dict[timestamp]).T)
+        order_df.to_csv(os.path.join(store_path, 'history_order.csv'))
 
-        # self.history_order_quantity_df.to_csv(os.path.join(store_path, 'order_quantity.csv'))
-        # self.history_order_action_df.to_csv(os.path.join(store_path, 'order_action.csv'))
 
 
     def _update_timestamp(self, event):

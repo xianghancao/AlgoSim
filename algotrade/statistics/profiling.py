@@ -46,11 +46,12 @@ class Profiling(object):
         self.cal_alpha_rsq()
 
         self.load_trades()
+        self.load_algo()
 
         self.store_profiles()
 
         plot_tearsheet(self.stats, self.periods, benchmark=self.benchmark, 
-                     rolling_sharpe=True, store_path=self.store_path)
+                     rolling_sharpe=True, store_path=self.account_path)
 
     def load_price(self):
         self.price = pd.read_csv(os.path.join(self.account_path, 'price', 'BuyPrice01.csv'), index_col=0)
@@ -183,27 +184,34 @@ class Profiling(object):
 
     # trades -----------------------------------------------------------------------------------------------------------
     def load_trades(self):
-        daily_buy_trades = pd.read_csv(os.path.join(self.account_path, 'statistics', 'trades', 'daily_buy_trades.csv'), index_col=0)
-        daily_sell_trades = pd.read_csv(os.path.join(self.account_path, 'statistics', 'trades', 'daily_sell_trades.csv'), index_col=0)
-        daily_buy_trades_amount = pd.read_csv(os.path.join(self.account_path, 'statistics', 'trades', 'daily_buy_trades_amount.csv'), index_col=0)
-        daily_sell_trades_amount = pd.read_csv(os.path.join(self.account_path, 'statistics', 'trades', 'daily_sell_trades_amount.csv'), index_col=0)
-        self.stats['daily_buy_trades_amount'] = daily_buy_trades_amount.loc['average'].sum()
-        self.stats['daily_sell_trades_amount'] = daily_sell_trades_amount.loc['average'].sum()        
-        self.stats['daily_trades_amount'] = self.stats['daily_buy_trades_amount'] + self.stats['daily_sell_trades_amount']
+        with open(os.path.join(self.account_path, 'statistics', 'trades.yaml'), 'r') as f:
+            loader = yaml.load(f, Loader=yaml.FullLoader)
+        self.stats.update(loader)
+        
+        df = pd.read_csv(os.path.join(self.account_path, 'statistics', 'bps.csv'), index_col=0)
+        self.stats['bps'] = df['bps']
+        self.stats['bps'].replace([np.inf, -np.inf], np.nan, inplace=True)
+        self.stats['avg_bps'] = self.stats['bps'].mean()
+        
+    # algo -----------------------------------------------------------------------------------------------------------
+    def load_algo(self):
+        df = pd.read_csv(os.path.join(self.account_path, 'algo', 'algo.csv'), index_col=0)
+        self.stats['buy_open'] = df[(df['买卖方向'] == '买') & (df['开平仓'] == '开仓')].shape[0]
+        self.stats['sell_open'] = df[(df['买卖方向'] == '卖') & (df['开平仓'] == '开仓')].shape[0]
+        self.stats['sell_close'] = df[(df['买卖方向'] == '卖') & (df['开平仓'] == '平仓')].shape[0]
+        self.stats['buy_close'] = df[(df['买卖方向'] == '买') & (df['开平仓'] == '平仓')].shape[0]
 
+        
+        
     # store -----------------------------------------------------------------------------------------------------------
     def store_profiles(self):
-        self.store_path = os.path.join(self.account_path, 'statistics', 'profiling')
-        if not os.path.exists(self.store_path):
-            os.mkdir(self.store_path)
-
         self.profiles = {}
         self.profiles.update(self.config)
         for i in self.stats:
             if type(self.stats[i]) != np.ndarray and type(self.stats[i]) != pd.core.frame.DataFrame and\
                                                 type(self.stats[i]) != pd.core.series.Series:
                 self.profiles.update({i:round(float(self.stats[i]), 2)})
-        with open(os.path.join(self.store_path, 'profiles.yaml').replace(':', '-'), 'w') as f:
+        with open(os.path.join(self.account_path, 'profiles.yaml').replace(':', '-'), 'w') as f:
             yaml.dump(self.profiles, f, encoding='unicode', sort_keys=False)
 
 

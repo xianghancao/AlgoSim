@@ -4,6 +4,7 @@ from enum import Enum
 import numpy as np
 import pandas as pd
 
+
 class Event(object):
     """
     为继承事件提供接口
@@ -13,7 +14,25 @@ class Event(object):
         return self.event_type
 
 
+#-----------------------------------------------------------------------------------------
+class TimeEvent(Event):
+    """
+    行情生成此类事件，交由生成K线的算法处理，或者直接交由信号文件处理
+    """
+    def __init__(self, timestamp, previous_timestamp):
+        """
+        timestamp - The timestamp of the tick e.g. yyyy-mm-dd hh:mm:ss.mmm
+        """
+        self.event_type = "TIME"
+        self.timestamp = timestamp
+        self.previous_timestamp = previous_timestamp
 
+    def __str__(self):
+        return "[TimeEvent] %s" %str(self.timestamp) 
+
+
+
+    
 #-----------------------------------------------------------------------------------------
 class TickEvent(Event):
     """
@@ -28,7 +47,6 @@ class TickEvent(Event):
         timestamp - The timestamp of the tick e.g. yyyy-mm-dd hh:mm:ss.mmm
         """
         self.event_type = "TICK"
-        #self.tick_marker = tick_marker
         self.timestamp = timestamp
         self.ticker_names = ticker_names
         self.field_dict = field_dict
@@ -37,7 +55,56 @@ class TickEvent(Event):
 
 
     def __str__(self):
-        return "[TickEvent] %s" %str(self.timestamp) #self.tick_marker)
+        return "[TickEvent] %s" %str(self.timestamp) 
+
+
+    
+#-----------------------------------------------------------------------------------------
+class FeatureEvent(Event):
+    """
+    生成包含特征X和y的事件，交由ModelHandler处理
+    """
+    def __init__(self, timestamp, ticker_names, feature_dict):
+        """
+        Initialises the FeatureEvent.
+
+        Parameters:
+        ticker_names - [symbol1, symbol2, ...]
+        timestamp - The timestamp of the tick e.g. yyyy-mm-dd hh:mm:ss.mmm
+        """
+        self.event_type = "FEATURE"
+        self.timestamp = timestamp
+        self.ticker_names = ticker_names
+        self.feature_dict = feature_dict
+        
+    def __str__(self):
+        return "[FeatureEvent] %s X nums:%s" %(self.timestamp, len(self.feature_dict))
+
+
+                                                 
+                                                 
+
+#-----------------------------------------------------------------------------------------
+class ModelEvent(Event):
+    """
+    生成predict_y的事件，交由AlgoHandler处理
+    """
+    def __init__(self, timestamp, ticker_names, predict_y):
+        """
+        Initialises the FeatureEvent.
+
+        Parameters:
+        ticker_names - [symbol1, symbol2, ...]
+        timestamp - The timestamp of the tick e.g. yyyy-mm-dd hh:mm:ss.mmm
+        """
+        self.event_type = "MODEL"
+        self.timestamp = timestamp
+        self.ticker_names = ticker_names
+        self.predict_y = predict_y
+        
+    def __str__(self):
+        return "[ModelEvent] %s" %(self.timestamp)
+
 
 
 
@@ -147,7 +214,7 @@ class FillEvent(Event):
 
 
     def __str__(self):
-        return "[FillEvent] %s %s" %(self.event_type, self.timestamp)
+        return "[FillEvent] %s" %(self.timestamp)
 
 
     def _check(self):

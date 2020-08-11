@@ -2,7 +2,7 @@ import os
 import numpy as np 
 import pandas as pd
 import yaml
-
+#from numba import jit
 #from .base import ExecutionHandler
 from ..event import FillEvent
 
@@ -85,7 +85,7 @@ class SimExecHandler():
             # 生成FillEvent
             self.gen_fill_event(event)
             self._update_fill()
-            #self.store()
+
 
     def gen_fill_event(self, event):
         exchange = self.exchange
@@ -123,15 +123,21 @@ class SimExecHandler():
         self.history_fill_dict.update({self.timestamp:self.fill_dict})
 
 
+
     def store(self):
-        """
-        存储fill
-        """
-        store_path = os.path.join(self.store_path, 'fill')
+        log.info('store ...')
+        store_path = os.path.join(self.store_path, 'exec')
         if not os.path.exists(store_path):
             os.mkdir(store_path)
-        with open(os.path.join(store_path, 'history_fill.yaml').replace(':', '-'), 'w', encoding='utf-8') as f:
-            yaml.dump(self.history_fill_dict, f, allow_unicode=True, sort_keys=False)
+            
+        fill_df = pd.DataFrame()
+        for timestamp in self.history_fill_dict:
+            fill_df = fill_df.append(pd.DataFrame(self.history_fill_dict[timestamp]).T)
+        fill_df.to_csv(os.path.join(store_path, 'history_fill.csv'))
+
+
+#         with open(os.path.join(store_path, 'history_fill.yaml').replace(':', '-'), 'w', encoding='utf-8') as f:
+#             yaml.dump(self.history_fill_dict, f, allow_unicode=True, sort_keys=False)
 
 
         # fill_dict_df = pd.DataFrame(self.fill_dict)

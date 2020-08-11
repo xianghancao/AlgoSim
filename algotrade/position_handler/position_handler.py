@@ -5,7 +5,7 @@ import numpy as np
 import pdb
 from ..utils.log import logger
 log = logger('[PositionHandler]')
-
+from numba import jit
 
 class PositionHandler(object):
     """
@@ -13,11 +13,11 @@ class PositionHandler(object):
     
     提供持仓查询
     """
-    def __init__(self, tick_handler, init_position, store_path):
+    def __init__(self, tick_handler, init_position, init_cash, store_path):
         """
         初始化持仓和账簿
         """
-        self.init_cash = 0
+        self.init_cash = init_cash
         self.store_path = store_path
         self.tick_handler = tick_handler
         self.init_position = init_position
@@ -62,9 +62,10 @@ class PositionHandler(object):
         self.timestamp = event.timestamp
 
 
+    @jit
     def update_position(self, event):
         """
-        更新持仓
+        当前持仓
         """
         fill_dict = event.fill_dict
         for ticker in self.position:
@@ -87,14 +88,15 @@ class PositionHandler(object):
                     self.position[ticker]['市值'] = round(self.position[ticker]['持仓'] * self.position[ticker]['现价'])
 
             else:
-                self.position[ticker]['现价'] = self.buy_price_01[ticker]
+                self.position[ticker]['现价'] = self.buy_price_01.get(ticker, 0)
                 self.position[ticker]['市值'] = round(self.position[ticker]['持仓'] * self.position[ticker]['现价'])
             self.position[ticker]['初始持仓市值'] = round(self.position[ticker]['初始持仓'] * self.position[ticker]['现价'])
 
 
+    @jit
     def update_book(self, event):
         """
-        更新历史持仓记录
+        当前账簿
         """
         self.book['股票资产'] = 0
         self.book['手续费'] = 0
@@ -112,7 +114,7 @@ class PositionHandler(object):
             else:
                 pass
             self.book['股票资产'] = self.book['股票资产'] + self.position[ticker]['市值']
-            self.book['初始持仓股票资产'] = self.book['初始持仓股票资产'] + self.position[ticker]['初始持仓市值']
+            self.book['初始持仓股票资产'] +=  self.position[ticker]['初始持仓市值']
         self.book['手续费'] = round(self.book['手续费'], 2)
         self.book['现金'] = round(self.book['现金'], 2)
         self.book['总资产'] = self.book['现金'] + self.book['股票资产']
@@ -148,8 +150,6 @@ class PositionHandler(object):
             self.update_history_position()
             self.update_history_book()
 
-            #self.store()
-
 
 
 
@@ -157,12 +157,13 @@ class PositionHandler(object):
         """
         存储持仓到指定目录下，建议在执行入口目录
         """
+        log.info('store ...')
         store_path = os.path.join(self.store_path, 'position')
         if not os.path.exists(store_path):
             os.mkdir(store_path)
 
-        with open(os.path.join(store_path, 'history_position.yaml').replace(':', '-'), 'w', encoding='utf-8') as f:
-            yaml.dump(self.history_position, f, allow_unicode=True, sort_keys=False)
+#         with open(os.path.join(store_path, 'history_position.yaml'), 'w', encoding='utf-8') as f:
+#             yaml.dump(self.history_position, f, allow_unicode=True, sort_keys=False)
 
         #store_history_position
         capital, position = {}, {}

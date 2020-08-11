@@ -1,4 +1,5 @@
 from matplotlib.ticker import FuncFormatter
+import numpy as np
 from matplotlib import cm
 from datetime import datetime
 import pandas as pd
@@ -48,8 +49,9 @@ def plot_tearsheet(stats, periods, benchmark=None, title=None, rolling_sharpe=Tr
     if rolling_sharpe:
         ax_alpha = plt.subplot(gs[2, :])
     ax_drawdown = plt.subplot(gs[2 + offset_index, :])
-    ax_daily_returns = plt.subplot(gs[3 + offset_index, :2])
-    ax_weekly_returns = plt.subplot(gs[3 + offset_index, 2])
+    ax_bps_dist = plt.subplot(gs[3 + offset_index, 0])
+    ax_daily_returns = plt.subplot(gs[3 + offset_index, 1])
+    ax_txt_algo = plt.subplot(gs[3 + offset_index, 2])
     ax_txt_curve = plt.subplot(gs[4 + offset_index, 0])
     ax_txt_alpha= plt.subplot(gs[4 + offset_index, 1])
     ax_txt_trade = plt.subplot(gs[4 + offset_index, 2])
@@ -58,8 +60,9 @@ def plot_tearsheet(stats, periods, benchmark=None, title=None, rolling_sharpe=Tr
     if rolling_sharpe:
         _plot_rolling_sharpe(stats, ax=ax_alpha)
     _plot_drawdown(stats, ax=ax_drawdown)
+    _plot_bps_dist(stats, ax=ax_bps_dist)
     _plot_daily_returns(stats, ax=ax_daily_returns)
-    _plot_weekly_returns(stats, convert_to='weekly', ax=ax_weekly_returns)
+    _plot_txt_algo(stats, ax=ax_txt_algo)
     _plot_txt_curve(stats, benchmark=benchmark, periods=periods, ax=ax_txt_curve)
     _plot_txt_alpha(stats, ax=ax_txt_alpha)
     _plot_txt_trade(stats, ax=ax_txt_trade)
@@ -177,7 +180,7 @@ def _plot_daily_returns(stats, ax=None, **kwargs):
     Plots a barplot of returns by daily.
     """
     def format_perc(x, pos):
-        return '%.0f%%' % x
+        return '%.000f%%' % x
 
     returns = stats['alpha_returns']
     returns = returns.fillna(0)
@@ -187,11 +190,11 @@ def _plot_daily_returns(stats, ax=None, **kwargs):
     if ax is None:
         ax = plt.gca()
 
-    y_axis_formatter = FuncFormatter(format_perc)
-    ax.yaxis.set_major_formatter(FuncFormatter(y_axis_formatter))
+    #y_axis_formatter = FuncFormatter(format_perc)
+    #ax.yaxis.set_major_formatter(FuncFormatter(y_axis_formatter))
     ax.yaxis.grid(linestyle=':')
 
-    dly_ret = perf.aggregate_returns(returns, 'daily') * 100.0
+    dly_ret = perf.aggregate_returns(returns, 'daily') #* 100.0
     dly_ret.plot(ax=ax, kind="bar")
     ax.set_title('Daily Alpha Returns (%)', fontweight='bold')
     ax.set_ylabel('')
@@ -202,79 +205,56 @@ def _plot_daily_returns(stats, ax=None, **kwargs):
     return ax
 
 
-def _plot_weekly_returns(stats, convert_to, ax=None, **kwargs):
+def _plot_bps_dist(stats, ax=None, **kwargs):
     """
-    Plots a heatmap of the monthly returns.
+    bps distribution
     """
-    returns = stats['alpha_returns']
-    returns = returns.fillna(0)
-    returns.name = 'returns'
-    returns.index = pd.to_datetime(returns.index)
+    ax.set_title('Bps Distribution', fontweight='bold')
+    stats['bps'].plot.hist(ax=ax, bins=50)
+    #ax.set_ylabel('')
+    return ax
+
+
+def _plot_txt_algo(stats, ax):
+    def format_perc(x, pos):
+        return '%.0f%%' % x
 
     if ax is None:
         ax = plt.gca()
 
-    if convert_to == 'weekly':
-        title = 'Weekly Alpha Returns(%)'
-        weekly_ret = perf.aggregate_returns(returns, 'weekly')
-        weekly_ret = weekly_ret.unstack()
-        weekly_ret = np.round(weekly_ret, 3)
-        weekly_ret.rename(
-            columns={1: 'Mon', 2: 'Tue', 3: 'Wed', 4: 'Thur',
-                     5: 'Fri'},
-            inplace=True
-        )
-        weekly_ret = weekly_ret.cumsum()
+    y_axis_formatter = FuncFormatter(format_perc)
+    ax.yaxis.set_major_formatter(FuncFormatter(y_axis_formatter))
 
-        sns.heatmap(
-            weekly_ret.fillna(0) * 100.0,
-            annot=True,
-            fmt="0.1f",
-            annot_kws={"size": 8},
-            alpha=1.0,
-            center=0.0,
-            cbar=False,
-            cmap=cm.RdYlGn,
-            ax=ax, **kwargs)
-        ax.set_title(title, fontweight='bold')
-        ax.set_ylabel('')
-        ax.set_yticklabels(ax.get_yticklabels(), rotation=0)
-        ax.set_xlabel('')
+    right = 9.75
 
-    elif convert_to == 'monthly':
-        title = 'Monthly Returns(%)'
-        monthly_ret = perf.aggregate_returns(returns, 'monthly')
-        monthly_ret = monthly_ret.unstack()
-        monthly_ret = np.round(monthly_ret, 3)
-        monthly_ret.rename(
-            columns={1: 'Jan', 2: 'Feb', 3: 'Mar', 4: 'Apr',
-                     5: 'May', 6: 'Jun', 7: 'Jul', 8: 'Aug',
-                     9: 'Sep', 10: 'Oct', 11: 'Nov', 12: 'Dec'},
-            inplace=True
-        )
-        sns.heatmap(
-            monthly_ret.fillna(0) * 100.0,
-            annot=True,
-            fmt="0.1f",
-            annot_kws={"size": 8},
-            alpha=1.0,
-            center=0.0,
-            cbar=False,
-            cmap=cm.RdYlGn,
-            ax=ax, **kwargs)
-        ax.set_title(title, fontweight='bold')
-        ax.set_ylabel('')
-        ax.set_yticklabels(ax.get_yticklabels(), rotation=0)
-        ax.set_xlabel('')
+    ax.text(0.25, 8.9, 'Sell Open', fontsize=10)
+    ax.text(right, 8.9, '{:.0f}'.format(stats['sell_open']), fontweight='bold', horizontalalignment='right', fontsize=10)
 
-    elif convert_to == 'yearly':
-        raise Exception('Undo')
+    ax.text(0.25, 7.9, 'Buy Close', fontsize=10)
+    ax.text(right, 7.9, '{:.0f}'.format(stats['buy_close']), fontweight='bold', horizontalalignment='right', fontsize=10)
+
+    ax.text(0.25, 6.9, 'Buy Open', fontsize=10)
+    ax.text(right, 6.9, '{:.0f}'.format(stats['buy_open']), fontweight='bold', horizontalalignment='right', fontsize=10)
+
+    ax.text(0.25, 5.9, 'Sell Close', fontsize=10)
+    ax.text(right, 5.9, '{:.0f}'.format(stats['sell_close']), fontweight='bold', horizontalalignment='right', fontsize=10)
 
 
+    ax.set_title('Algo', fontweight='bold')
+
+    ax.grid(False)
+    ax.spines['top'].set_linewidth(2.0)
+    ax.spines['bottom'].set_linewidth(2.0)
+    ax.spines['right'].set_visible(False)
+    ax.spines['left'].set_visible(False)
+    ax.get_yaxis().set_visible(False)
+    ax.get_xaxis().set_visible(False)
+    ax.set_ylabel('')
+    ax.set_xlabel('')
+
+    ax.axis([0, 10, 0, 10])
     return ax
-
-
-
+    
 def _plot_txt_curve(stats, periods, benchmark=None, ax=None):
     """
     Outputs the statistics for the equity curve.
@@ -291,7 +271,7 @@ def _plot_txt_curve(stats, periods, benchmark=None, ax=None):
     if benchmark is None:
         left = 9.75
     else:
-        left = 7.50
+        left = 6.50
         right = 9.75
     ax.text(0.25, 8.9, 'Total Return', fontsize=10)
     ax.text(left, 8.9, '{:.2%}'.format(stats['total_returns']), fontweight='bold', horizontalalignment='right', fontsize=10)
@@ -314,7 +294,7 @@ def _plot_txt_curve(stats, periods, benchmark=None, ax=None):
     ax.text(0.25, 2.9, 'Max Drawdown', fontsize=10)
     ax.text(left, 2.9, '{:.2%}'.format(stats['max_drawdowns']), color='red', fontweight='bold', horizontalalignment='right', fontsize=10)
 
-    ax.text(0.25, 1.9, 'Max Drawdown Duration', fontsize=10)
+    ax.text(0.25, 1.9, 'MDD Duration', fontsize=10)
     ax.text(left, 1.9, '{:.0f}'.format(stats['max_drawdowns_duration']), fontweight='bold', horizontalalignment='right', fontsize=10)
 
     ax.set_title('Curve', fontweight='bold')
@@ -331,8 +311,7 @@ def _plot_txt_curve(stats, periods, benchmark=None, ax=None):
         dd_b, dd_max_b, dd_dur_b = stats['benchmark_drawdowns'], stats['benchmark_max_drawdowns'], stats['benchmark_max_drawdowns_duration']
 
         ax.text(right, 8.9, '{:.2%}'.format(tot_ret_b), fontweight='bold', horizontalalignment='right', fontsize=10)
-        ax.text(right, 7.9, '{:.0f}'.format(tot_cap_b), fontweight='bold', horizontalalignment='right', fontsize=10)
-        #ax.text(right, 7.9, '{:.2%}'.format(cagr_b), fontweight='bold', horizontalalignment='right', fontsize=10)
+        ax.text(right, 7.9, '{:.0f}'.format(tot_cap_b), horizontalalignment='right', fontsize=10)
         ax.text(right, 6.9, '{:.2f}'.format(sharpe_b), fontweight='bold', horizontalalignment='right', fontsize=10)
         ax.text(right, 5.9, '{:.2f}'.format(sortino_b), fontweight='bold', horizontalalignment='right', fontsize=10)
         ax.text(right, 4.9, '{:.2%}'.format(returns_b.std() * np.sqrt(252)), fontweight='bold', horizontalalignment='right', fontsize=10)
@@ -372,10 +351,10 @@ def _plot_txt_alpha(stats, ax=None):
 
     right = 9.75
     ax.text(0.25, 8.9, 'Alpha Return', fontsize=10)
-    ax.text(right, 8.9, '{:.2%}'.format(stats['alpha_cum_returns'].iloc[-1]), fontweight='bold', horizontalalignment='right', fontsize=10)
+    ax.text(right, 8.9, '{:.2%}'.format(stats['alpha_cum_returns'].iloc[-1]), color='red', fontweight='bold', horizontalalignment='right', fontsize=10)
 
     ax.text(0.25, 7.9, 'Alpha Capital', fontsize=10)
-    ax.text(right, 7.9, '{:.0f}'.format(stats['alpha_capital']), fontweight='bold', horizontalalignment='right', fontsize=10)
+    ax.text(right, 7.9, '{:.0f}'.format(stats['alpha_capital']), color='red', fontweight='bold', horizontalalignment='right', fontsize=10)
 
     ax.text(0.25, 6.9, 'Alpha Sharpe Ratio', fontsize=10)
     ax.text(right, 6.9, '{:.2f}'.format(stats['alpha_sharpe']), fontweight='bold', horizontalalignment='right', fontsize=10)
@@ -426,18 +405,23 @@ def _plot_txt_trade(stats, ax=None):
     ax.yaxis.set_major_formatter(FuncFormatter(y_axis_formatter))
 
     right = 9.75
-    ax.text(0.25, 8.9, 'Daily Trades Amount', fontsize=10)
+    ax.text(0.25, 8.9, 'Total Trades Amount', fontsize=10)
     ax.text(right, 8.9, '{:.0f}'.format(stats['daily_trades_amount']), fontweight='bold', horizontalalignment='right', fontsize=10)
 
-    ax.text(0.25, 7.9, 'Daily Buy Amount', fontsize=10)
+    ax.text(0.25, 7.9, 'Total Buy Amount', fontsize=10)
     ax.text(right, 7.9, '{:.0f}'.format(stats['daily_buy_trades_amount']), fontweight='bold', horizontalalignment='right', fontsize=10)
 
-    ax.text(0.25, 6.9, 'Daily Sell Amount', fontsize=10)
+    ax.text(0.25, 6.9, 'Total Sell Amount', fontsize=10)
     ax.text(right, 6.9, '{:.0f}'.format(stats['daily_sell_trades_amount']), fontweight='bold', horizontalalignment='right', fontsize=10)
 
     ax.text(0.25, 5.9, 'Total Fee', fontsize=10)
     ax.text(right, 5.9, '{:.0f}'.format(stats['total_fee']), fontweight='bold', horizontalalignment='right', fontsize=10)
 
+    ax.text(0.25, 4.9, 'Total Trades Nums', fontsize=10)
+    ax.text(right, 4.9, '{:.0f}'.format(stats['total_trades_nums']), color='red', fontweight='bold', horizontalalignment='right', fontsize=10)
+
+    ax.text(0.25, 3.9, 'Avg Bps', fontsize=10)
+    ax.text(right, 3.9, '{:.0f}'.format(stats['avg_bps']), color='red', fontweight='bold', horizontalalignment='right', fontsize=10)
 
     ax.set_title('Trades', fontweight='bold')
 
