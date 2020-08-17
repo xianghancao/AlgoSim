@@ -5,6 +5,7 @@ import shutil
 import os, sys, time
 from fastprogress.fastprogress import progress_bar
 sys.path.append('/home/cxh/Works/AlgoTrade/')
+import numpy as np
 
 from algotrade.utils import utils
     
@@ -63,10 +64,9 @@ class Fn():
 
 
 
-for date in os.listdir('/mnt/ssd/XSHG_XSHE/'):
-    if (date[:6] == '202004' and not os.path.exists('/mnt/ssd/AlgoTrade/store/%s/' %date)): #or \
+for date in np.sort(os.listdir('/mnt/ssd/XSHG_XSHE/')):
+    if (date[:6] == '202005' and not os.path.exists('/mnt/ssd/AlgoTrade/store/%s/' %date)): #or \
     #(date[:6] == '202004' and len(os.listdir('/mnt/ssd/AlgoTrade/store/%s/price/' %date))==0):
-        print(date)
         store_path = '/home/cxh/Works/SSD/AlgoTrade/store/%s' %date
         utils.make_dirs(os.path.join(store_path, 'price'))
         print(date, store_path)

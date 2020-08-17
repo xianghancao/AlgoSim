@@ -120,22 +120,22 @@ class OnlineTickHandler(AbstractTickHandler):
     def _update_tick(self):
         # TAQ
         while True:
-            if self.TAQ_df.index.values[self.TAQ_iter_num] >= self.previous_timestamp and \
-                            self.TAQ_df.index.values[self.TAQ_iter_num] < self.timestamp:
+            if self.TAQ_df.index.values[self.TAQ_iter_num] == self.timestamp:
                 data = self.TAQ_df.iloc[self.TAQ_iter_num].to_dict()
                 for field in self.subscribe_fields['TAQ']:
                     if data[field] != 0:
                         self.tick_ticker_dict[data['Symbol']][field] = float(data[field])
                     else:
                         continue
-            elif self.TAQ_df.index.values[self.TAQ_iter_num] >= self.timestamp:
+            elif self.TAQ_df.index.values[self.TAQ_iter_num] > self.timestamp:
                 break
             self.TAQ_iter_num = next(self.TAQ_iterator)
 
+
         # TRADE
         while True:
-            if self.TRADE_df.index.values[self.TRADE_iter_num] >= self.previous_timestamp and \
-                            self.TRADE_df.index.values[self.TRADE_iter_num] < self.timestamp:
+            if self.TRADE_df.index.values[self.TRADE_iter_num] > self.previous_timestamp and \
+                            self.TRADE_df.index.values[self.TRADE_iter_num] <= self.timestamp:
                 data = self.TRADE_df.iloc[self.TRADE_iter_num].to_dict()
                 if data['Market'] == 'SSE':
                     if data['BuySellFlag'] == 'B':
@@ -150,7 +150,7 @@ class OnlineTickHandler(AbstractTickHandler):
                                                                  data['SellOrderID'] != 0:
                         self.tick_ticker_dict[data['Symbol']]['ActiveSell'] += float(data['TradeVolume'])
 
-            elif self.TRADE_df.index.values[self.TRADE_iter_num] >= self.timestamp:
+            elif self.TRADE_df.index.values[self.TRADE_iter_num] > self.timestamp:
                 break
             self.TRADE_iter_num = next(self.TRADE_iterator)
 

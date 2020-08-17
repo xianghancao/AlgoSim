@@ -1,16 +1,41 @@
-universe: default
 
 subscribe_fields:
     TAQ: ['BuyPrice01', 'SellPrice01', 'BuyVolume01', 'SellVolume01', 'TotalBuyOrderVolume', 'TotalSellOrderVolume', 'WtAvgSellPrice', 'WtAvgBuyPrice']
     TRADE: ["ActiveBuy", "ActiveSell"]
     
+
+
+
+
+TimeIndex:
+    date: 20200601
+
+TickHandler:
+    OnlineTickHandler:
+        csv_dir: '/mnt/ssd/XSHG_XSHE/'
+        date: 20200601
+        subscribe_tickers: '000905'
+        store_path: '/home/cxh/Works/AlgoTrade/store/'
+        
+    OfflineTickHandler:
+Feature:
+    online: 
+    offline: ['f1', 'f2']
+
+Model:
+    online:
+        coe:
+            - f1:
+            - f2:
+            - f3:
+
+        store: predict_y.csv
+
+    offline:
+            
+PositionHandler:
+init_cash: 5000000
 init_position:
     {'初始持仓':20000,'持仓':20000, '可用':20000, '上限':20000}
     
-init_cash: 5000000
-store_path: '/home/cxh/Works/AlgoTrade/store/'
-date: 20200601
 
-Handler:
-    TIME:
-    

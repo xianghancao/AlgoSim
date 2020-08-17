@@ -10,7 +10,6 @@ class AbstractTickHandler():
         self.subscribe_tickers = subscribe_tickers
         self.subscribe_fields = subscribe_fields
         self.events_queue = events_queue
-
         self._iteration_end = False
 
 
@@ -68,6 +67,8 @@ class AbstractTickHandler():
     def _update_price(self):
         self.sell_price_01 = self.tick_field_dict['SellPrice01']
         self.buy_price_01 = self.tick_field_dict['BuyPrice01']
+        self.sell_volume_01 = self.tick_field_dict['SellVolume01']
+        self.buy_volume_01 = self.tick_field_dict['BuyVolume01']
         return
 
 
@@ -78,6 +79,12 @@ class AbstractTickHandler():
     def get_sell_price_01(self):
         return self.sell_price_01
 
+    def get_buy_volume_01(self):
+        return self.buy_volume_01
+
+    def get_sell_volume_01(self):
+        return self.sell_volume_01
+    
     def get_last_timestamp(self):
         return self.timestamp
 

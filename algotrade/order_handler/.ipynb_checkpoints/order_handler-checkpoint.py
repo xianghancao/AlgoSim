@@ -68,9 +68,9 @@ class OrderHandler(object):
         """
         self.order_dict = {}
         for ticker in event.algo:
-            if event.algo[ticker] > 0 and self.book['现金'] > event.algo[ticker] * self.sell_price_01[ticker] * 50\
-                                      and self.sell_price_01[ticker] > 0:
-            #if event.algo[ticker] > 0 and self.sell_price_01[ticker] > 0:
+#             if event.algo[ticker] > 0 and self.book['现金'] > event.algo[ticker] * self.sell_price_01[ticker] * 50\
+#                                       and self.sell_price_01[ticker] > 0:
+            if event.algo[ticker] > 0 and self.sell_price_01[ticker] > 0:
                 self.order_dict[ticker]={}
                 self.order_dict[ticker]['证券代码'] = ticker
                 self.order_dict[ticker]['委托日期'] = self.timestamp
@@ -80,8 +80,8 @@ class OrderHandler(object):
                 self.order_dict[ticker]['订单类型'] = "正常委托"
                 self.order_dict[ticker]['委托价格'] = self.sell_price_01[ticker]
 
-            elif event.algo[ticker] < 0 and self.position[ticker]['可用'] > 0 and self.buy_price_01[ticker]>0:
-            #elif event.algo[ticker] < 0 and self.buy_price_01[ticker]>0:
+            #elif event.algo[ticker] < 0 and self.position[ticker]['可用'] > 0 and self.buy_price_01[ticker]>0:
+            elif event.algo[ticker] < 0 and self.buy_price_01[ticker]>0:
 
                 self.order_dict[ticker]={}
                 self.order_dict[ticker]['证券代码'] = ticker

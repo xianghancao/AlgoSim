@@ -239,6 +239,10 @@ def _plot_txt_algo(stats, ax):
     ax.text(0.25, 5.9, 'Sell Close', fontsize=10)
     ax.text(right, 5.9, '{:.0f}'.format(stats['sell_close']), fontweight='bold', horizontalalignment='right', fontsize=10)
 
+    
+    ax.text(0.25, 4.9, 'Total Nums', fontsize=10)
+    ax.text(right, 4.9, '{:.0f}'.format(stats['algo_nums']), fontweight='bold', horizontalalignment='right', fontsize=10)
+
 
     ax.set_title('Algo', fontweight='bold')
 
@@ -420,8 +424,12 @@ def _plot_txt_trade(stats, ax=None):
     ax.text(0.25, 4.9, 'Total Trades Nums', fontsize=10)
     ax.text(right, 4.9, '{:.0f}'.format(stats['total_trades_nums']), color='red', fontweight='bold', horizontalalignment='right', fontsize=10)
 
-    ax.text(0.25, 3.9, 'Avg Bps', fontsize=10)
-    ax.text(right, 3.9, '{:.0f}'.format(stats['avg_bps']), color='red', fontweight='bold', horizontalalignment='right', fontsize=10)
+    ax.text(0.25, 3.9, 'Trade Stock Nums', fontsize=10)
+    ax.text(right, 3.9, '{:.0f}'.format(stats['trade_stock_nums']), color='red', fontweight='bold', horizontalalignment='right', fontsize=10)
+
+
+    ax.text(0.25, 2.9, 'Avg Bps', fontsize=10)
+    ax.text(right, 2.9, '{:.0f}'.format(stats['avg_bps']), color='red', fontweight='bold', horizontalalignment='right', fontsize=10)
 
     ax.set_title('Trades', fontweight='bold')
 

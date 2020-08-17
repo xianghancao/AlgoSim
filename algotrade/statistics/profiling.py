@@ -191,15 +191,17 @@ class Profiling(object):
         df = pd.read_csv(os.path.join(self.account_path, 'statistics', 'bps.csv'), index_col=0)
         self.stats['bps'] = df['bps']
         self.stats['bps'].replace([np.inf, -np.inf], np.nan, inplace=True)
-        self.stats['avg_bps'] = self.stats['bps'].mean()
+        self.stats['avg_bps'] = (df['卖成交额'].sum() / df['买成交额'].sum() - 1) * 10000
+        self.stats['trade_stock_nums'] = df.shape[0]
         
     # algo -----------------------------------------------------------------------------------------------------------
     def load_algo(self):
         df = pd.read_csv(os.path.join(self.account_path, 'algo', 'algo.csv'), index_col=0)
-        self.stats['buy_open'] = df[(df['买卖方向'] == '买') & (df['开平仓'] == '开仓')].shape[0]
-        self.stats['sell_open'] = df[(df['买卖方向'] == '卖') & (df['开平仓'] == '开仓')].shape[0]
-        self.stats['sell_close'] = df[(df['买卖方向'] == '卖') & (df['开平仓'] == '平仓')].shape[0]
-        self.stats['buy_close'] = df[(df['买卖方向'] == '买') & (df['开平仓'] == '平仓')].shape[0]
+        self.stats['buy_open'] = df[(df['买卖方向'] == '买') & (df['开平仓'] == '开仓')]['委托数量'].sum()
+        self.stats['sell_open'] = df[(df['买卖方向'] == '卖') & (df['开平仓'] == '开仓')]['委托数量'].sum()
+        self.stats['sell_close'] = df[(df['买卖方向'] == '卖') & (df['开平仓'] == '平仓')]['委托数量'].sum()
+        self.stats['buy_close'] = df[(df['买卖方向'] == '买') & (df['开平仓'] == '平仓')]['委托数量'].sum()
+        self.stats['algo_nums'] = self.stats['buy_open'] + self.stats['sell_open'] + self.stats['sell_close'] + self.stats['buy_close']
 
         
         

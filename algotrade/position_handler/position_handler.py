@@ -5,7 +5,8 @@ import numpy as np
 import pdb
 from ..utils.log import logger
 log = logger('[PositionHandler]')
-from numba import jit
+
+
 
 class PositionHandler(object):
     """
@@ -37,7 +38,7 @@ class PositionHandler(object):
             self.position[ticker]['现价'] = 0
             self.position[ticker]['市值'] = 0
             self.position[ticker]['净开仓'] = 0
-            self.position[ticker]['初始持仓市值'] = 0
+            self.position[ticker]['基准持仓市值'] = 0
 
     def _init_book(self):
         """
@@ -45,7 +46,7 @@ class PositionHandler(object):
         """
         self.book = {}
         self.book['现金'] = self.init_cash
-        self.book['初始现金'] = self.init_cash
+        self.book['基准现金'] = self.init_cash
         self.history_book = {}
 
 
@@ -58,12 +59,12 @@ class PositionHandler(object):
 
 
 
-    def update_timestamp(self, event):
+    def _update_timestamp(self, event):
         self.timestamp = event.timestamp
 
 
-    @jit
-    def update_position(self, event):
+
+    def _update_position(self, event):
         """
         当前持仓
         """
@@ -88,19 +89,19 @@ class PositionHandler(object):
                     self.position[ticker]['市值'] = round(self.position[ticker]['持仓'] * self.position[ticker]['现价'])
 
             else:
-                self.position[ticker]['现价'] = self.buy_price_01.get(ticker, 0)
+                self.position[ticker]['现价'] = max(self.buy_price_01.get(ticker, 0), self.sell_price_01.get(ticker, 0))
                 self.position[ticker]['市值'] = round(self.position[ticker]['持仓'] * self.position[ticker]['现价'])
-            self.position[ticker]['初始持仓市值'] = round(self.position[ticker]['初始持仓'] * self.position[ticker]['现价'])
+            self.position[ticker]['基准持仓市值'] = round(self.position[ticker]['基准持仓'] * self.position[ticker]['现价'])
 
 
-    @jit
-    def update_book(self, event):
+
+    def _update_book(self, event):
         """
         当前账簿
         """
         self.book['股票资产'] = 0
         self.book['手续费'] = 0
-        self.book['初始持仓股票资产'] = 0
+        self.book['基准持仓市值'] = 0
         fill_dict = event.fill_dict
         for ticker in self.position:
             if ticker in fill_dict:
@@ -114,23 +115,23 @@ class PositionHandler(object):
             else:
                 pass
             self.book['股票资产'] = self.book['股票资产'] + self.position[ticker]['市值']
-            self.book['初始持仓股票资产'] +=  self.position[ticker]['初始持仓市值']
+            self.book['基准持仓市值'] +=  self.position[ticker]['基准持仓市值']
         self.book['手续费'] = round(self.book['手续费'], 2)
         self.book['现金'] = round(self.book['现金'], 2)
         self.book['总资产'] = self.book['现金'] + self.book['股票资产']
-        self.book['初始持仓资产'] = self.init_cash + self.book['初始持仓股票资产']
+        self.book['基准资产'] = self.book['基准现金'] + self.book['基准持仓市值']
 
 
 
 
-    def update_history_book(self):
+    def _update_history_book(self):
         """
         更新历史持仓记录
         """
         self.history_book.update({self.timestamp:copy.deepcopy(self.book)})
 
 
-    def update_history_position(self):
+    def _update_history_position(self):
         """
         更新历史持仓记录
         """
@@ -141,14 +142,14 @@ class PositionHandler(object):
     def on_fill(self, event):
         if event.event_type == "FILL":
             self._query_last_price()
-            self.update_timestamp(event)
+            self._update_timestamp(event)
 
-            self.update_position(event)
-            self.update_book(event)
+            self._update_position(event)
+            self._update_book(event)
 
 
-            self.update_history_position()
-            self.update_history_book()
+            self._update_history_position()
+            self._update_history_book()
 
 
 
@@ -162,29 +163,37 @@ class PositionHandler(object):
         if not os.path.exists(store_path):
             os.mkdir(store_path)
 
-#         with open(os.path.join(store_path, 'history_position.yaml'), 'w', encoding='utf-8') as f:
-#             yaml.dump(self.history_position, f, allow_unicode=True, sort_keys=False)
-
-        #store_history_position
-        capital, position = {}, {}
+        capital, position, current_price = {}, {}, {}
         for i in self.history_position:
             capital[i] = {}
             position[i] = {}
+            current_price[i] = {}
+            benchmark_position[i] = {}
+            benchmark_position_capital[i] = {}
             for j in self.ticker_names:
                 capital[i][j] = self.history_position[i][j]['市值']
                 position[i][j] = self.history_position[i][j]['持仓']
+                current_price[i][j] = self.history_position[i][j]['现价']
+                benchmark_position[i][j] = self.history_position[i][j]['基准持仓']
+                benchmark_position_capital[i][j] = self.history_position[i][j]['基准持仓市值']
+                
         self.history_capital_df = pd.DataFrame(capital).T
         self.history_capital_df.to_csv(os.path.join(store_path, 'history_capital.csv'))
 
         self.history_position_df = pd.DataFrame(position).T
         self.history_position_df.to_csv(os.path.join(store_path, 'history_position.csv'))
 
+        self.history_price_df = pd.DataFrame(current_price).T
+        self.history_price_df.to_csv(os.path.join(store_path, 'history_price.csv'))
 
         self.history_book_df = pd.DataFrame(self.history_book).T
         self.history_book_df.to_csv(os.path.join(store_path, 'history_book.csv'))
 
-
+        pd.DataFrame(benchmark_position).T.to_csv(os.path.join(store_path, 'benchmark_position.csv'))
             
+        pd.DataFrame(benchmark_position_capital).T.to_csv(os.path.join(store_path, 'benchmark_position_capital.csv'))
+        
+        
     def get_position(self):
         """
         返回当前持仓

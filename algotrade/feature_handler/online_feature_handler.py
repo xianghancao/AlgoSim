@@ -31,7 +31,6 @@ class OnlineFeatureHandler(FeatureHandler):
         log.info('calculate_X ...')
         feature_dict, self.feature_dict = {}, {}
         feature_dict['f1'] = (BuyVolume01 - SellVolume01)/(BuyVolume01 + SellVolume01)
-        feature_dict['f2'] = diff_m(rank_m(feature_dict['f1']), 20)
         feature_dict['f3'] = ts_rank_m(feature_dict['f1'], 3)
         feature_dict['f4'] = diff_m(rank_m(feature_dict['f1']), 3)
         feature_dict['f5'] = diff_m(feature_dict['f1'], 3)
@@ -50,7 +49,6 @@ class OnlineFeatureHandler(FeatureHandler):
         feature_dict['f10'] = ret_120
         feature_dict['f11'] = rank_m(ret_120)
         feature_dict['f12'] = rank_m(ret_60)
-        feature_dict['f13'] = ts_rank_m(ret_60, 20)
         feature_dict['f14'] = ret_6
         feature_dict['f15'] = rank_m(ret_6)
         feature_dict['f16'] = ts_rank_m(ret_6, 40)
@@ -75,6 +73,7 @@ class OnlineFeatureHandler(FeatureHandler):
         feature_dict['f28'] = diff_m(rank_m(price_imbalance), 20)
         feature_dict['f29'] = diff_m(price_imbalance, 3)
 
+
         for i in feature_dict:
             self.feature_dict[i] = feature_dict[i][-1]
         return
@@ -86,6 +85,8 @@ class OnlineFeatureHandler(FeatureHandler):
                                   feature_dict=self.feature_dict)
         self.events_queue.put(algo_event)
         return 
+    
+    
 
     def _init_TickFrame(self):
         for field in self.subscribe_fields:

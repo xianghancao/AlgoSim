@@ -24,12 +24,15 @@ class OfflineFeatureHandler(FeatureHandler):
         
     def load_X(self): 
         self.feature_df = {}
-        for i in tqdm(os.listdir(os.path.join(self.off_path, 'feature'))):
+        for i in tqdm(['f1', 'f3', 'f4', 'f5', 'f6', 'f7', 'f8', 'f9', 
+            'f10', 'f11', 'f12', 'f14', 'f15', 'f16', 'f17', 'f18',
+            'f19', 'f20', 'f21', 'f22', 'f23', 'f24', 'f25', 'f26', 'f27',
+            'f28', 'f29']):
             if 'ipynb' in i: continue
-            ii = i.split('.')[0]
-            self.feature_df[ii] = pd.read_csv(os.path.join(self.off_path, 'feature', i), index_col=0)
-            self.ticker_names = self.feature_df[ii].columns.values 
-            self.timestamp_arr = self.feature_df[ii].index.values.astype('str')
+            self.feature_df[i] = pd.read_csv(os.path.join(self.off_path, 'feature', i+'.csv'), index_col=0)
+            self.ticker_names = self.feature_df[i].columns.values 
+            self.timestamp_arr = self.feature_df[i].index.values.astype('str')
+            #log.info('%s: %s' %(i, self.feature_df[ii].shape))
 
 
         

@@ -5,8 +5,10 @@ from numba import jit
 
 
 def rank_m(x):
-    x[np.isnan(x)] = 0
-    return x - np.nansum(x, axis=1).reshape(x.shape[0],1)/x.shape[1]
+    x[np.isinf(x)] = np.nan
+    x = pd.DataFrame(x).fillna(method='ffill').values
+    return x - np.nanmean(x, axis=1).reshape(-1,1)
+
 
 
 def ts_rank_m(x, period):

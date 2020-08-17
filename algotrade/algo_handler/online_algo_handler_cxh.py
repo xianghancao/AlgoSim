@@ -30,38 +30,40 @@ class OnlineAlgoHandler(AlgoHandler):
 
         BuyPrice01 = pd.Series(self.tick_handler.get_buy_price_01())[self.ticker_names].values
         SellPrice01 = pd.Series(self.tick_handler.get_sell_price_01())[self.ticker_names].values
+        SellVolume01 = pd.Series(self.tick_handler.get_sell_volume_01())[self.ticker_names].values
+        BuyVolume01 = pd.Series(self.tick_handler.get_buy_volume_01())[self.ticker_names].values
+        
         spread = (SellPrice01 - BuyPrice01)/BuyPrice01
         
         self.position = self.position_handler.get_position()
-        
+
         for i in range(len(self.ticker_names)):
             ticker = self.ticker_names[i]
             score = y[i]
             if score > 0.005 or score < -0.005: continue
             # 建仓
-            if score < 0 and -1 * score - spread[i] - fees + 0.0003 > 0 and spread[i]>0: # and self.position[ticker]['净开仓']>=0:
-                self.algo_order(ticker=ticker, direction='卖', offset='开仓', numbers=500, score=round(score,6), spread=round(spread[i],6), buy_price= BuyPrice01[i], sell_price=SellPrice01[i], net_position=self.position[ticker]['净开仓'])
+            if score < 0 and -1 * score - spread[i] - fees + 0.0005 > 0 and spread[i]>0: # and self.position[ticker]['净开仓']>=0:
+                self.algo_order(ticker=ticker, direction='卖', offset='开仓', numbers=int(BuyVolume01[i]/10), score=round(score,6), spread=round(spread[i],6), buy_price= BuyPrice01[i], sell_price=SellPrice01[i], net_position=self.position[ticker]['净开仓'])
                 self.last_algo_sell_open[ticker] = {'开仓时间': self.timestamp}
                 
                 
-            if score > 0 and score - spread[i] - fees +0.0003 > 0 and spread[i]>0:
-                self.algo_order(ticker=ticker, direction='买', offset='开仓', numbers=500, score=round(score,6), spread=round(spread[i],6), buy_price= BuyPrice01[i], sell_price=SellPrice01[i], net_position=self.position[ticker]['净开仓'])
+            if score > 0 and score - spread[i] - fees + 0.0005 > 0 and spread[i]>0:
+                self.algo_order(ticker=ticker, direction='买', offset='开仓', numbers=int(SellVolume01[i]/10), score=round(score,6), spread=round(spread[i],6), buy_price= BuyPrice01[i], sell_price=SellPrice01[i], net_position=self.position[ticker]['净开仓'])
                 self.last_algo_buy_open[ticker] = {'开仓时间': self.timestamp}
                 
 
             # 平仓
             if score > 0 and score - spread[i]/2 - 0.0005  > 0 \
                 and self.position[ticker]['净开仓'] < 0 \
-                and spread[i]>0 \
-                and pd.to_datetime(self.timestamp) - pd.to_datetime(self.last_algo_sell_open[ticker]['开仓时间']) > datetime.timedelta(seconds=90):
-                self.algo_order(ticker=ticker, direction='买', offset='平仓', numbers=500, score=round(score,6), spread=round(spread[i],6), buy_price= BuyPrice01[i], sell_price=SellPrice01[i], net_position=self.position[ticker]['净开仓'])
+                and spread[i]>0: #\
+                #and pd.to_datetime(self.timestamp) - pd.to_datetime(self.last_algo_sell_open[ticker]['开仓时间']) > datetime.timedelta(seconds=240):
+                self.algo_order(ticker=ticker, direction='买', offset='平仓', numbers=int(SellVolume01[i]/10), score=round(score,6), spread=round(spread[i],6), buy_price= BuyPrice01[i], sell_price=SellPrice01[i], net_position=self.position[ticker]['净开仓'])
 
-            if score < 0 and -1 * score - spread[i]/2 - 0.0003  > 0 \
+            if score < 0 and -1 * score - spread[i]/2 - 0.0005  > 0 \
                 and self.position[ticker]['净开仓'] > 0 \
-                and spread[i]>0 \
-                and pd.to_datetime(self.timestamp) - pd.to_datetime(self.last_algo_buy_open[ticker]['开仓时间']) > datetime.timedelta(seconds=90):
-                self.algo_order(ticker=ticker, direction='卖', offset='平仓', numbers=500, score=round(score,6), spread=round(spread[i],6), buy_price= BuyPrice01[i], sell_price=SellPrice01[i], net_position=self.position[ticker]['净开仓'])
-
+                and spread[i]>0: # \
+                #and pd.to_datetime(self.timestamp) - pd.to_datetime(self.last_algo_buy_open[ticker]['开仓时间']) > datetime.timedelta(seconds=240):
+                self.algo_order(ticker=ticker, direction='卖', offset='平仓', numbers=int(BuyVolume01[i]/10), score=round(score,6), spread=round(spread[i],6), buy_price= BuyPrice01[i], sell_price=SellPrice01[i], net_position=self.position[ticker]['净开仓'])
 
 
 
