@@ -18,7 +18,6 @@ class Profiling(object):
 
     def run(self):
         self.load_price()
-
         self.load_books()
         self.cal_datetime()
         self.cal_PNL()
@@ -31,7 +30,6 @@ class Profiling(object):
         self.cal_rsq()
 
         self.cal_benchmark_PNL()
-        self.load_benchmark()
         self.cal_benchmark_sharpe()
         self.cal_benchmark_drawdowns()
         self.cal_benchmark_cagr()
@@ -55,8 +53,6 @@ class Profiling(object):
 
     def load_price(self):
         self.price = pd.read_csv(os.path.join(self.account_path, 'price', 'BuyPrice01.csv'), index_col=0)
-        # self.price = self.price.loc[np.in1d(self.price.index.values,
-        #                             self.marker['bar_marker'].index.values[self.marker['bar_marker'].values != 'LOOKBACK'])]
 
 
     def load_books(self):
@@ -118,18 +114,17 @@ class Profiling(object):
 
 
     # benchmark -----------------------------------------------------------------------------------------------------------
-    def load_benchmark(self):
+
+    def cal_benchmark_PNL(self):
+        self.stats['benchmark_PNL'] = self.book['基准资产']
+        self.stats['benchmark_total_capital'] = self.stats['benchmark_PNL'].iloc[-1]
+        
         self.stats['benchmark_returns'] = (self.stats['benchmark_PNL'] - self.stats['benchmark_PNL'].shift(1))/self.stats['benchmark_PNL'].iloc[0]
         self.stats['benchmark_returns'] = self.stats['benchmark_returns'].fillna(0)
         self.stats['benchmark_returns'].replace([np.inf, -np.inf], np.nan, inplace=True)
         self.stats['benchmark_cum_returns'] = self.stats['benchmark_returns'].cumsum(skipna=True)
-
-
-    def cal_benchmark_PNL(self):
-        self.stats['benchmark_PNL'] = self.book['初始持仓资产']
-        self.stats['benchmark_total_capital'] = self.stats['benchmark_PNL'].iloc[-1]
-
-
+        
+        
     def cal_benchmark_drawdowns(self):
         self.stats['benchmark_drawdowns'], self.stats['benchmark_max_drawdowns'], self.stats['benchmark_max_drawdowns_duration'] =\
                          create_drawdowns(self.stats['benchmark_cum_returns'])
@@ -219,7 +214,7 @@ class Profiling(object):
 
 
 if __name__ == '__main__':
-    pro = Profiling(account_path='/Users/Hans/Desktop/Dali/account/', benchmark='equal_wgts_benchmark')
+    pro = Profiling(account_path='/Users/Hans/Desktop/Dali/account/', benchmark='benchmark')
     pro.run()
 
 

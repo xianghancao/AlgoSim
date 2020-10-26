@@ -34,6 +34,7 @@ class OfflineTickHandler(AbstractTickHandler):
         self._subscribe_ticker()
         self._init_ticker()
         self._init_tick()
+        self._clean()
 
 
     # ------------------------------------------------------------------------
@@ -42,14 +43,24 @@ class OfflineTickHandler(AbstractTickHandler):
         local_files_path = os.path.join(self.off_path, 'price')
         log.info('load offline files: %s' %local_files_path)
         for field in tqdm(self.subscribe_fields['TAQ'] + self.subscribe_fields['TRADE']):
-            self.field_df[field] = pd.read_csv(os.path.join(local_files_path, field+'.csv'), index_col=0)
-        self.columns = reduce(np.intersect1d, (self.field_df[i].columns.values for i in self.field_df))
+            self.field_df[field] = pd.read_csv(os.path.join(local_files_path, field+'.csv'), index_col=0)[self.subscribe_tickers]
+            #self.columns = reduce(np.intersect1d, (self.field_df[i].columns.values for i in self.field_df))
+#         for field in self.subscribe_fields['TAQ'] + self.subscribe_fields['TRADE']:
+#             self.field_df[field] = self.field_df[field][self.columns]
+
+    # ------------------------------------------------------------------------
+    def _clean(self):
         for field in tqdm(self.subscribe_fields['TAQ'] + self.subscribe_fields['TRADE']):
-            self.field_df[field] = self.field_df[field][self.columns]
+            self.field_df[field][self.field_df[field]==0] = np.nan
+            self.field_df[field] = self.field_df[field].fillna(method='ffill')
+            self.field_df[field] = self.field_df[field].fillna(method='bfill')
+            self.field_df[field] = self.field_df[field].fillna(0)
+        
+        
        
     # ------------------------------------------------------------------------
     def _init_tick(self):
-        self.ticker_names = self.columns
+        self.ticker_names = self.subscribe_tickers #self.columns
         
         
     # ------------------------------------------------------------------------

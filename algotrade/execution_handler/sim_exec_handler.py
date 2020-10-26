@@ -113,7 +113,7 @@ class SimExecHandler():
             self.fill_dict[i]['过户费'] = cal_transfer_fee(self.fill_dict[i]['成交数量'],
                                                                 self.fill_dict[i]['成交价格'],
                                                                 self.fill_dict[i]['买卖方向'])
-
+            self.fill_dict[i]['净成交额'] = self.fill_dict[i]['成交额'] - self.fill_dict[i]['佣金'] - self.fill_dict[i]['印花税'] - self.fill_dict[i]['过户费']
         fill_event = FillEvent(self.fill_dict, self.timestamp)
         self.events_queue.put(fill_event)
         
