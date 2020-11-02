@@ -1,74 +1,4 @@
 
-A extendable, replaceable event-driven algorithmic backtest && trading framework based on Python 3.x
-
-## Event
-- TickEvent
-- AlgoEvent
-- OrderEvent
-- FillEvent
-
-
-## Handler
-- tick_handler
-- feature_handler
-- model_handler
-- order_handler
-- execution_handler
-- position_handler
-
-
-## Launch from yaml file
-using yaml file to launch programs, e.g.template.yaml
-```
-TickHandler:
-    OnlineTickHandler:
-        csv_dir: '/data/XSHG_XSHE/'
-        subscribe_fields:
-            TAQ: ['BuyPrice01', 'SellPrice01', 'BuyVolume01', 'SellVolume01', 'TotalBuyOrderVolume', 'TotalSellOrderVolume', 'WtAvgSellPrice', 'WtAvgBuyPrice']
-            TRADE: ["ActiveBuy", "ActiveSell"]
-        date: ['20200601']
-        subscribe_tickers: ['']  #code of instrument
-        subscirbe_universe: False
-        store_path: '/store/'
-        
-
-FeatureHandler:
-    OnlineFeatureHandler: 
-        feature_name: ['f1', 'f2']   # feature .py file names
-    store_path: '/store/'
-
-ModelHandler:
-    OnlineModelHandler:
-        model_name: 'algo_101'  #name of model
-    store_path: '/store/'
-
-
-AlgoHandler:
-    algo_name: 'algo_101'
-    store_path: '/store/'
-
-OrderHandler:
-    store_path: '/store/'
-
-    
-PositionHandler:
-    init_cash: 5000000
-    init_position:
-        {'初始持仓':20000,'持仓':20000, '可用':20000, '上限':20000}
-    store_path: '/store/'        
-
-ExecutionHandler:
-    SimExecHandler:
-    store_path: '/store/'
-
-
-Statistics:
-    store_path: '/store/'
-
-```
-### more freedom way to launch
-```
-
 import os, sys, time
 sys.path.append('/your_path/AlgoLearn/')
 
@@ -191,4 +121,3 @@ b.run()
 from algosim.statistics import profiling
 pro = profiling.Profiling(account_path=self.store_path, benchmark='benchmark')
 pro.run()
-```

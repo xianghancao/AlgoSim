@@ -11,7 +11,7 @@ except(IOError, ImportError):
     print("Can't import pypandoc - using README.md without converting to RST")
     long_description = open('README.md').read()
 
-NAME = 'dali'
+NAME = 'AlgoTrade'
 with io.open(path.join(here, NAME, 'version.py'), 'rt', encoding='UTF-8') as f:
     exec(f.read())
 
@@ -24,7 +24,7 @@ setup(
     #version='0.0.2',
     version=__version__,
 
-    description='Advanced Trading Infrastructure Base On Vector Engine',
+    description='Advanced Trading Infrastructure Base On Event',
     long_description=long_description,
 
 
