@@ -4,7 +4,7 @@ TickHandler:
         subscribe_fields:
             TAQ: ['BuyPrice01', 'SellPrice01', 'BuyVolume01', 'SellVolume01', 'TotalBuyOrderVolume', 'TotalSellOrderVolume', 'WtAvgSellPrice', 'WtAvgBuyPrice']
             TRADE: ["ActiveBuy", "ActiveSell"]
-        date: ['20200601']
+        date: [''] # dates
         subscribe_tickers: ['']  #code of instrument
         subscirbe_universe: False
         store_path: '/store/'
@@ -37,7 +37,7 @@ PositionHandler:
 
 ExecutionHandler:
     SimExecHandler:
-    store_path: '/store/'
+        store_path: '/store/'
 
 
 Statistics:
