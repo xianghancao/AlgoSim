@@ -64,7 +64,7 @@ OrderHandler:
 PositionHandler:
     init_cash: 5000000
     init_position:
-        {'初始持仓':20000,'持仓':20000, '可用':20000, '上限':20000}
+        {'init_pos':20000,'hold_pos':20000, 'available_pos':20000, 'limit_pos':20000}
     store_path: '/store/'        
 
 ExecutionHandler:
