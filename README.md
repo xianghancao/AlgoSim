@@ -2,10 +2,10 @@
 A extendable, replaceable event-driven algorithmic backtest && trading framework based on Python 3.x
 
 ## Introduction
-This framework use event-driven backtest way which aims to fit for real environment. It sacrifices speed, but retains the accuracy and logic of algorithmic trading. I only uploaded a simplified version to provide a framework for quantitative analysts or enthusiasts of quantitative trading. If you have any questions, please contact me: caoxianghan@gmail.com
+This framework uses an event-driven backtest way that aims to fit for a real environment. It sacrifices speed but retains the accuracy and logic of algorithmic trading. I only uploaded a simplified version to provide a framework for quantitative analysts or enthusiasts of quantitative trading. If you have any questions, please contact me: caoxianghan@gmail.com
 
 ## Two Modes
-online mode and offline mode are two modes for simulation, which aims to simulate steps by steps. This design is very effective for huge datesets and long periods.
+Online mode and offline mode are two modes for simulation, which aims to simulate steps by steps. This design is very effective for big datasets and long periods.
 
 
 ## Event
