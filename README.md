@@ -2,7 +2,10 @@
 A extendable, replaceable event-driven algorithmic backtest && trading framework based on Python 3.x
 
 ## Event
+- TimeEvent
 - TickEvent
+- FeatureEvent
+- ModelEvent
 - AlgoEvent
 - OrderEvent
 - FillEvent
