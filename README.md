@@ -22,7 +22,7 @@ A extendable, replaceable event-driven algorithmic backtest && trading framework
 
 ## Launch from yaml file
 using yaml file to launch programs, e.g.template.yaml
-```
+```yaml
 TickHandler:
     OnlineTickHandler:
         csv_dir: '/data/XSHG_XSHE/'
@@ -70,7 +70,7 @@ Statistics:
 
 ```
 ### more freedom way to launch
-```
+```python
 
 import os, sys, time
 sys.path.append('/your_path/AlgoLearn/')
